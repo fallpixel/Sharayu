@@ -934,19 +934,99 @@
     color: var(--accent);
     font-weight: bold;
 }
+        /* Hamburger Button (Default hidden on desktop) */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 26px;
+    height: 19px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 101;
+}
+
+.menu-toggle span {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: var(--text);
+    border-radius: 2px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: flex;
+    }
+
+    /* Transform burger lines into an 'X' when open */
+    .menu-toggle.active span:nth-child(1) {
+        transform: translateY(8.5px) rotate(45deg);
+    }
+    .menu-toggle.active span:nth-child(2) {
+        opacity: 0;
+    }
+    .menu-toggle.active span:nth-child(3) {
+        transform: translateY(-8.5px) rotate(-45deg);
+    }
+
+    /* Dropdown Drawer */
+    .nav-links {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: rgba(250, 250, 250, 0.98);
+        backdrop-filter: blur(12px);
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+        padding: 2.5rem 1rem;
+        border-bottom: 1px solid var(--border);
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.04);
+        
+        /* Smooth reveal animation */
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-10px);
+        transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
+    }
+
+    .nav-links.active {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+
+    .nav-links a {
+        font-size: 1.1rem;
+    }
+}
     </style>
 </head>
 <body>
 
     <nav>
-        <a href="#" class="logo">Sharayu.</a>
-        <div class="nav-links">
-            <a href="#work">Work</a>
-            <a href="#experience">Career</a>
-            <a href="#expertise">Capabilities</a>
-            <a href="#about">About</a>
-        </div>
-    </nav>
+    <a href="#" class="logo">Sharayu.</a>
+    
+    <!-- Mobile Hamburger Button -->
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle Navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <div class="nav-links" id="navLinks">
+        <a href="#work">Work</a>
+        <a href="#experience">Career</a>
+        <a href="#expertise">Capabilities</a>
+        <a href="#about">About</a>
+    </div>
+</nav>
 
     <main>
         <!-- Hero Section with Creative Photo Frame -->
@@ -988,7 +1068,7 @@
 
         <!-- Featured Projects List -->
         <section id="work" class="container">
-            <br/>
+            <br/><br/>
             <h2 class="text-lg fade-up">Featured Case Studies</h2>
             <p style="color: var(--text-light); margin-top: 0.5rem;" class="fade-up">Click on any project to explore the interactive visual summary, performance metrics, and embedded drive report.</p>
             
@@ -1395,6 +1475,22 @@
     </footer>
 
     <script>
+        const menuToggle = document.getElementById('menuToggle');
+    const navLinks = document.getElementById('navLinks');
+
+    // Toggle menu open/close
+    menuToggle.addEventListener('click', () => {
+        menuToggle.classList.toggle('active');
+        navLinks.classList.toggle('active');
+    });
+
+    // Close menu when clicking a link
+    navLinks.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+            menuToggle.classList.remove('active');
+            navLinks.classList.remove('active');
+        });
+    });
         // Project Data with Infographic stats & Drive Shareable Links
         const projectData = {
             vscan: {
