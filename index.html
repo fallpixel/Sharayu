@@ -1,772 +1,1740 @@
 <!DOCTYPE html>
-<!-- saved from url=(0063)file:///C:/Users/shara/Downloads/gemini-code-1788636276636.html -->
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sharayu Dhakulkar — Marketing Strategy &amp; Innovation Portfolio</title>
-  <script src="./Sharayu Dhakulkar — Marketing Strategy &amp; Innovation Portfolio_files/saved_resource"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com/">
-  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
-  <link href="./Sharayu Dhakulkar — Marketing Strategy &amp; Innovation Portfolio_files/css2" rel="stylesheet">
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            brand: {
-              50: '#F8F6F0',
-              100: '#EFECE6',
-              800: '#1C1917',
-              accent: '#E05A47',
-              accentLight: '#FAF3F0',
-              muted: '#78716C',
-              card: '#FFFFFF',
-              emerald: '#2D5A27',
-              navy: '#1A2B4C',
-              terracotta: '#A84332'
-            }
-          },
-          fontFamily: {
-            display: ['Syne', 'sans-serif'],
-            body: ['Plus Jakarta Sans', 'sans-serif']
-          }
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sharayu Dhakulkar | Portfolio & Case Studies</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,800;1,400;1,600&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+    <style>
+
+:root {
+  --brand-accent: #E05A47; /* Replace with your actual brand accent hex */
+  --stone-100: #f5f5f4;
+  --stone-300: #d6d3d1;
+  --stone-800: #292524;
+}
+
+.cta-group {
+  padding-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* Shared button styles */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.875rem 1.75rem;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.15s ease-in-out;
+  line-height: 1.25rem;
+}
+
+/* Primary button (Explore Case Studies) */
+.btn-primary {
+  background-color: var(--brand-accent);
+  color: #ffffff;
+  border: 1px solid transparent;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+}
+
+.btn-primary:hover {
+  opacity: 0.9;
+}
+
+/* Secondary outline button (LinkedIn Profile) */
+.btn-secondary {
+  background-color: transparent;
+  color: var(--stone-800);
+  border: 1px solid var(--stone-300);
+}
+
+.btn-secondary:hover {
+  background-color: var(--stone-100);
+}
+
+        :root {
+            --bg: #FAFAFA;
+            --text: #1A202C;
+            --text-light: #5A6072;
+            --accent: #E05A47;
+            --border: rgba(26, 32, 44, 0.1);
+            --font-heading: 'Playfair Display', serif;
+            --font-display: sans-serif;
+            --font-body: 'Inter', sans-serif;
         }
-      }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: var(--bg);
+            color: var(--text);
+            font-family: var(--font-body);
+            line-height: 1.6;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        img {
+            width: 100%;
+            display: block;
+            object-fit: cover;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 5%;
+        }
+
+        section {
+            padding: 10vh 0;
+        }
+
+        h1, h2, h3, h4 {
+            font-family: var(--font-heading);
+            font-weight: 600;
+            line-height: 1.15;
+        }
+
+        .text-xl { font-size: clamp(2.5rem, 5vw, 4.5rem); letter-spacing: -0.02em; }
+        .text-lg { font-size: clamp(2rem, 4vw, 3.5rem); }
+        .italic { font-style: italic; font-weight: 400; }
+
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            padding: 1.8rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 100;
+            background: rgba(250, 250, 250, 0.92);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--border);
+        }
+
+        .logo {
+            font-family: var(--font-heading);
+            font-weight: 800;
+            font-size: 1.5rem;
+            letter-spacing: -0.02em;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        .nav-links a:hover {
+            color: var(--accent);
+        }
+
+        /* Hero Section & Creative Frame */
+        .hero {
+            min-height: 92vh;
+            display: flex;
+            align-items: center;
+            padding-top: 14vh;
+        }
+
+        .hero-layout {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 3.5rem;
+            align-items: center;
+            width: 100%;
+        }
+
+        @media (min-width: 900px) {
+            .hero-layout {
+                grid-template-columns: 1.35fr 1fr;
+            }
+        }
+
+        .availability-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 16px;
+            border: 1px solid var(--border);
+            border-radius: 50px;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 1.8rem;
+            background: #FFF;
+        }
+
+        .dot {
+            width: 8px;
+            height: 8px;
+            background-color: #2D5A27;
+            border-radius: 50%;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(45, 90, 39, 0.7); }
+            70% { transform: scale(1); box-shadow: 0 0 0 6px rgba(45, 90, 39, 0); }
+            100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(45, 90, 39, 0); }
+        }
+
+        .cursor {
+            font-weight: 300;
+            animation: blink 1s step-end infinite;
+        }
+        @keyframes blink { 50% { opacity: 0; } }
+
+        /* Creative Portrait Frame */
+        .hero-portrait-container {
+            position: relative;
+            max-width: 380px;
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        .hero-portrait-frame {
+            position: relative;
+            border-radius: 28px;
+            overflow: hidden;
+            aspect-ratio: 4/5;
+            box-shadow: 0 20px 40px -15px rgba(28, 25, 23, 0.2);
+            border: 1px solid var(--border);
+            background: #FFF;
+            z-index: 2;
+        }
+
+        .hero-portrait-frame img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .hero-portrait-container:hover .hero-portrait-frame img {
+            transform: scale(1.04);
+        }
+
+        .hero-portrait-backdrop {
+            position: absolute;
+            top: -18px;
+            background: #e05a47;
+            left: -18px;
+            width: 110%;
+            height: 112%;
+            border: 2px solid #e05a47;
+            z-index: 1;
+            opacity: 0.35;
+            transition: transform 0.4s ease;
+            border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+            animation: waveBorder 8s ease-in-out infinite alternate;
+        }
+
+        @keyframes waveBorder {
+        0% {
+            border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+        }
+        50% {
+            border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+        }
+        100% {
+            border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+        }
+        }
+
+        .portrait-tag {
+            position: absolute;
+            bottom: -15px;
+            right: 15px;
+            background: #1C1917;
+            color: #FFF;
+            padding: 8px 16px;
+            border-radius: 50px;
+            font-size: 0.72rem;
+            font-weight: 600;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            z-index: 3;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+        }
+
+        /* Work Showcase Grid */
+        .work-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 4.5rem;
+            margin-top: 4rem;
+        }
+
+        .project-card {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2.5rem;
+            align-items: center;
+            padding-bottom: 3.5rem;
+            border-bottom: 1px solid var(--border);
+        }
+
+        @media (min-width: 850px) {
+            .project-card { grid-template-columns: 1.1fr 1fr; gap: 4rem; }
+            .project-card:nth-child(even) { direction: rtl; }
+            .project-card:nth-child(even) > * { direction: ltr; }
+        }
+
+        .project-img-wrapper {
+            overflow: hidden;
+            border-radius: 16px;
+            aspect-ratio: 16/10;
+            background-color: #EFECE6;
+            cursor: pointer;
+        }
+
+        .project-img-wrapper img {
+            height: 100%;
+            transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .project-card:hover .project-img-wrapper img {
+            transform: scale(1.04);
+        }
+
+        .project-tags {
+            display: flex;
+            gap: 0.5rem;
+            margin-top: 1.25rem;
+            flex-wrap: wrap;
+        }
+
+        .tag {
+            font-size: 0.75rem;
+            padding: 4px 12px;
+            border: 1px solid var(--border);
+            border-radius: 50px;
+            color: var(--text-light);
+            background: #FFF;
+        }
+
+        .metric-badge {
+            margin-top: 1.2rem;
+            padding: 0.8rem 1rem;
+            background: #FFF;
+            border-radius: 12px;
+            border: 1px solid var(--border);
+            display: inline-block;
+        }
+
+        .metric-badge span {
+            display: block;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--text-light);
+        }
+
+        .metric-badge strong {
+            color: var(--accent);
+            font-size: 1.05rem;
+            font-weight: 700;
+        }
+
+        .open-detail-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            margin-top: 1.5rem;
+            font-size: 0.85rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--accent);
+            cursor: pointer;
+            background: none;
+            border: none;
+            padding: 0;
+        }
+
+        .open-detail-btn:hover {
+            transform: translateX(4px);
+        }
+
+        /* Detail Modal / Overlay View */
+        .modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(15, 23, 42, 0.75);
+            backdrop-filter: blur(8px);
+            z-index: 1000;
+            display: none;
+            overflow-y: auto;
+            padding: 2rem 1rem;
+        }
+
+        .modal-overlay.active {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+        .modal-container {
+            background: #FAFAFA;
+            width: 100%;
+            max-width: 1050px;
+            border-radius: 28px;
+            position: relative;
+            padding: 2.5rem;
+            margin: 2rem auto;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+            animation: modalFadeIn 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        @keyframes modalFadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .modal-close-btn {
+            position: sticky;
+            top: 0;
+            float: right;
+            background: #1C1917;
+            color: #FFF;
+            border: none;
+            border-radius: 50px;
+            padding: 8px 18px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            cursor: pointer;
+            z-index: 20;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+
+        /* Infographic View Elements */
+        .info-hero {
+            background: #1C1917;
+            color: #FFF;
+            border-radius: 20px;
+            padding: 2.5rem;
+            margin: 1.5rem 0 2rem;
+            clear: both;
+        }
+
+        .info-pill {
+            display: inline-block;
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            padding: 4px 12px;
+            border-radius: 50px;
+            margin-bottom: 1rem;
+            background: rgba(224, 90, 71, 0.2);
+            color: #FFA599;
+            border: 1px solid rgba(224, 90, 71, 0.4);
+        }
+
+        .info-kpi-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+        @media(min-width: 768px) {
+            .info-kpi-grid { grid-template-columns: repeat(4, 1fr); }
+        }
+
+        .info-kpi-card {
+            background: #FFF;
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 1.25rem;
+            text-align: center;
+        }
+
+        .info-kpi-val {
+            font-size: 1.65rem;
+            font-weight: 800;
+            font-family: var(--font-display);
+            color: var(--text);
+        }
+
+        .info-kpi-val.accent { color: var(--accent); }
+        .info-kpi-label {
+            font-size: 0.7rem;
+            color: var(--text-light);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-top: 4px;
+        }
+
+        .info-split-layout {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+        @media(min-width: 850px) {
+            .info-split-layout { grid-template-columns: 1.6fr 1fr; }
+        }
+
+        .info-card {
+            background: #FFF;
+            border: 1px solid var(--border);
+            border-radius: 20px;
+            padding: 1.75rem;
+        }
+
+        .quote-box {
+            font-family: var(--font-heading);
+            font-size: 1.35rem;
+            font-style: italic;
+            border-left: 4px solid var(--accent);
+            padding: 0.75rem 0 0.75rem 1.25rem;
+            margin: 1rem 0;
+            background: #FFF7F5;
+            border-radius: 0 12px 12px 0;
+            color: #1C1917;
+        }
+
+        .roadmap-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 0.75rem;
+            margin-top: 1rem;
+        }
+        @media(min-width: 600px) {
+            .roadmap-grid { grid-template-columns: repeat(4, 1fr); }
+        }
+
+        .roadmap-step {
+            background: #F8F6F0;
+            border: 1px solid rgba(28,25,23,0.08);
+            border-radius: 12px;
+            padding: 0.85rem;
+            text-align: center;
+        }
+
+        .roadmap-step span {
+            display: block;
+            font-size: 0.65rem;
+            font-weight: 700;
+            color: var(--text-light);
+            text-transform: uppercase;
+        }
+
+        .roadmap-step strong {
+            font-size: 0.95rem;
+            color: var(--text);
+        }
+
+        /* In-App Drive PDF Viewer Container */
+        .pdf-viewer-section {
+            background: #FFF;
+            border: 1px solid var(--border);
+            border-radius: 20px;
+            padding: 1.75rem;
+            margin-top: 2rem;
+        }
+
+        .pdf-header {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1.25rem;
+            gap: 1rem;
+        }
+
+        .pdf-frame-wrapper {
+            position: relative;
+            width: 100%;
+            height: 540px;
+            border-radius: 14px;
+            overflow: hidden;
+            background: #E5E7EB;
+            border: 1px solid var(--border);
+        }
+
+        .pdf-frame-wrapper iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        .drive-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: var(--text);
+            color: #FFF;
+            padding: 8px 18px;
+            border-radius: 50px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .drive-btn:hover {
+            background: var(--accent);
+            color: #FFF;
+        }
+
+        /* Capabilities & Experience */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 2.5rem;
+            margin-top: 3rem;
+        }
+
+        .services-grid h3 { margin-bottom: 1.5rem; font-size: 1.4rem; }
+        .services-grid ul { list-style: none; }
+        .services-grid li {
+            padding: 0.75rem 0;
+            border-bottom: 1px solid var(--border);
+            font-size: 0.95rem;
+            color: var(--text-light);
+        }
+
+        .marquee-wrapper {
+            width: 100vw;
+            margin-left: calc(-50vw + 50%);
+            overflow: hidden;
+            padding: 3.5rem 0;
+            background: #111;
+            color: #FAFAFA;
+        }
+
+        .marquee {
+            display: flex;
+            white-space: nowrap;
+            animation: marquee 20s linear infinite;
+        }
+
+        .marquee span {
+            font-family: var(--font-heading);
+            font-size: 2.2rem;
+            padding: 0 2rem;
+            font-style: italic;
+        }
+
+        @keyframes marquee {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+
+        .experience-list { margin-top: 3rem; }
+        .exp-row {
+            display: flex;
+            flex-direction: column;
+            padding: 1.8rem 0;
+            border-bottom: 1px solid var(--border);
+        }
+        @media (min-width: 768px) {
+            .exp-row { flex-direction: row; justify-content: space-between; align-items: baseline; }
+        }
+        .exp-role { font-weight: 600; font-size: 1.2rem; }
+        .exp-company { font-family: var(--font-heading); font-style: italic; color: var(--text-light); }
+        .exp-date { font-size: 0.85rem; color: var(--text-light); }
+
+        /* FAQs */
+        .faq-item { border-bottom: 1px solid var(--border); }
+        .faq-question {
+            width: 100%;
+            text-align: left;
+            background: none;
+            border: none;
+            padding: 1.5rem 0;
+            font-family: var(--font-heading);
+            font-size: 1.25rem;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: var(--text);
+        }
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease;
+            color: var(--text-light);
+        }
+        .faq-answer p { padding-bottom: 1.5rem; }
+
+        /* Contact */
+        .contact-form { max-width: 600px; margin-top: 3rem; }
+        .input-group { margin-bottom: 1.8rem; }
+        .input-group input, .input-group textarea {
+            width: 100%;
+            background: transparent;
+            border: none;
+            border-bottom: 1px solid var(--border);
+            padding: 0.9rem 0;
+            font-family: var(--font-body);
+            font-size: 1rem;
+            color: var(--text);
+            outline: none;
+            transition: border-color 0.3s ease;
+        }
+        .input-group input:focus, .input-group textarea:focus { border-bottom-color: var(--text); }
+        button.submit-btn {
+            background: var(--text);
+            color: var(--bg);
+            border: none;
+            padding: 1rem 2.5rem;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+        button.submit-btn:hover { transform: translateY(-2px); }
+
+        footer {
+            padding: 6rem 5% 3rem;
+            text-align: center;
+            border-top: 1px solid var(--border);
+        }
+        .footer-name {
+            font-family: var(--font-heading);
+            font-size: clamp(2.5rem, 8vw, 8rem);
+            line-height: 1;
+            margin-bottom: 2.5rem;
+        }
+
+        .fade-up {
+            opacity: 0;
+            transform: translateY(24px);
+            transition: opacity 0.7s ease, transform 0.7s ease;
+        }
+        .fade-up.visible { opacity: 1; transform: translateY(0); }
+
+        /* ===================================================
+   CAREER, EDUCATION & CAPABILITIES STYLES
+   =================================================== */
+
+/* Section Sub-labels */
+.section-sublabel {
+    display: block;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--accent);
+    margin-bottom: 0.5rem;
+}
+
+.section-title {
+    font-family: var(--font-heading);
+    font-size: clamp(2rem, 3.5vw, 2.75rem);
+    font-weight: 600;
+    margin-bottom: 2.5rem;
+    color: var(--text);
+}
+
+/* Glass / Elevated Card Utility */
+.content-card {
+    background: #FFFFFF;
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    padding: 2rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+}
+
+/* Professional Experience List */
+.experience-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.75rem;
+}
+
+.exp-card-header {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 1rem;
+    margin-bottom: 1.25rem;
+}
+
+@media (min-width: 768px) {
+    .exp-card-header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
     }
-  </script>
-  <style>
-    body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #F8F6F0; color: #1C1917; scroll-behavior: smooth; }
-    h1, h2, h3, h4, .font-display { font-family: 'Syne', sans-serif; }
-    .page-view { display: none; }
-    .page-view.active { display: block; }
-    .glass-card { background: rgba(255, 255, 255, 0.85); backdrop-filter: blur(12px); border: 1px solid rgba(28, 25, 23, 0.08); }
-    .pill-tag { @apply text-xs font-semibold px-3 py-1 rounded-full bg-stone-100 text-stone-700 border border-stone-200 inline-block; }
-  </style>
-<style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.sticky{position:sticky}.top-0{top:0px}.z-50{z-index:50}.mx-auto{margin-left:auto;margin-right:auto}.my-4{margin-top:1rem;margin-bottom:1rem}.mb-1{margin-bottom:0.25rem}.mb-12{margin-bottom:3rem}.mb-2{margin-bottom:0.5rem}.mb-3{margin-bottom:0.75rem}.mb-4{margin-bottom:1rem}.mb-6{margin-bottom:1.5rem}.mb-8{margin-bottom:2rem}.mt-1{margin-top:0.25rem}.mt-2{margin-top:0.5rem}.mt-3{margin-top:0.75rem}.line-clamp-3{overflow:hidden;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:3}.block{display:block}.flex{display:flex}.inline-flex{display:inline-flex}.grid{display:grid}.hidden{display:none}.h-2{height:0.5rem}.min-h-screen{min-height:100vh}.w-2{width:0.5rem}.max-w-2xl{max-width:42rem}.max-w-3xl{max-width:48rem}.max-w-6xl{max-width:72rem}.max-w-7xl{max-width:80rem}.max-w-md{max-width:28rem}.flex-grow{flex-grow:1}@keyframes pulse{50%{opacity:.5}}.animate-pulse{animation:pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite}.cursor-pointer{cursor:pointer}.list-disc{list-style-type:disc}.grid-cols-1{grid-template-columns:repeat(1, minmax(0, 1fr))}.grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.flex-col{flex-direction:column}.flex-wrap{flex-wrap:wrap}.items-start{align-items:flex-start}.items-center{align-items:center}.justify-between{justify-content:space-between}.gap-1{gap:0.25rem}.gap-12{gap:3rem}.gap-2{gap:0.5rem}.gap-4{gap:1rem}.gap-6{gap:1.5rem}.gap-8{gap:2rem}.space-x-8 > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(2rem * var(--tw-space-x-reverse));margin-left:calc(2rem * calc(1 - var(--tw-space-x-reverse)))}.space-y-2 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.5rem * var(--tw-space-y-reverse))}.space-y-3 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.75rem * var(--tw-space-y-reverse))}.space-y-4 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1rem * var(--tw-space-y-reverse))}.space-y-6 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1.5rem * var(--tw-space-y-reverse))}.space-y-8 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(2rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(2rem * var(--tw-space-y-reverse))}.self-start{align-self:flex-start}.rounded-2xl{border-radius:1rem}.rounded-3xl{border-radius:1.5rem}.rounded-full{border-radius:9999px}.rounded-xl{border-radius:0.75rem}.border{border-width:1px}.border-b{border-bottom-width:1px}.border-l-4{border-left-width:4px}.border-t{border-top-width:1px}.border-amber-200{--tw-border-opacity:1;border-color:rgb(253 230 138 / var(--tw-border-opacity, 1))}.border-amber-500\/30{border-color:rgb(245 158 11 / 0.3)}.border-blue-200{--tw-border-opacity:1;border-color:rgb(191 219 254 / var(--tw-border-opacity, 1))}.border-blue-500\/30{border-color:rgb(59 130 246 / 0.3)}.border-brand-accent{--tw-border-opacity:1;border-color:rgb(224 90 71 / var(--tw-border-opacity, 1))}.border-emerald-200{--tw-border-opacity:1;border-color:rgb(167 243 208 / var(--tw-border-opacity, 1))}.border-emerald-500\/30{border-color:rgb(16 185 129 / 0.3)}.border-purple-200{--tw-border-opacity:1;border-color:rgb(233 213 255 / var(--tw-border-opacity, 1))}.border-purple-500\/30{border-color:rgb(168 85 247 / 0.3)}.border-red-200{--tw-border-opacity:1;border-color:rgb(254 202 202 / var(--tw-border-opacity, 1))}.border-red-500\/30{border-color:rgb(239 68 68 / 0.3)}.border-stone-100{--tw-border-opacity:1;border-color:rgb(245 245 244 / var(--tw-border-opacity, 1))}.border-stone-200{--tw-border-opacity:1;border-color:rgb(231 229 228 / var(--tw-border-opacity, 1))}.border-stone-200\/60{border-color:rgb(231 229 228 / 0.6)}.border-stone-200\/80{border-color:rgb(231 229 228 / 0.8)}.border-stone-300{--tw-border-opacity:1;border-color:rgb(214 211 209 / var(--tw-border-opacity, 1))}.border-stone-800{--tw-border-opacity:1;border-color:rgb(41 37 36 / var(--tw-border-opacity, 1))}.bg-amber-50{--tw-bg-opacity:1;background-color:rgb(255 251 235 / var(--tw-bg-opacity, 1))}.bg-amber-500\/20{background-color:rgb(245 158 11 / 0.2)}.bg-blue-50{--tw-bg-opacity:1;background-color:rgb(239 246 255 / var(--tw-bg-opacity, 1))}.bg-blue-500\/20{background-color:rgb(59 130 246 / 0.2)}.bg-brand-accent{--tw-bg-opacity:1;background-color:rgb(224 90 71 / var(--tw-bg-opacity, 1))}.bg-emerald-50{--tw-bg-opacity:1;background-color:rgb(236 253 245 / var(--tw-bg-opacity, 1))}.bg-emerald-500\/20{background-color:rgb(16 185 129 / 0.2)}.bg-orange-100{--tw-bg-opacity:1;background-color:rgb(255 237 213 / var(--tw-bg-opacity, 1))}.bg-purple-50{--tw-bg-opacity:1;background-color:rgb(250 245 255 / var(--tw-bg-opacity, 1))}.bg-purple-500\/20{background-color:rgb(168 85 247 / 0.2)}.bg-red-50{--tw-bg-opacity:1;background-color:rgb(254 242 242 / var(--tw-bg-opacity, 1))}.bg-red-500\/20{background-color:rgb(239 68 68 / 0.2)}.bg-stone-100{--tw-bg-opacity:1;background-color:rgb(245 245 244 / var(--tw-bg-opacity, 1))}.bg-stone-50{--tw-bg-opacity:1;background-color:rgb(250 250 249 / var(--tw-bg-opacity, 1))}.bg-stone-900{--tw-bg-opacity:1;background-color:rgb(28 25 23 / var(--tw-bg-opacity, 1))}.p-3{padding:0.75rem}.p-4{padding:1rem}.p-5{padding:1.25rem}.p-6{padding:1.5rem}.p-7{padding:1.75rem}.p-8{padding:2rem}.px-3{padding-left:0.75rem;padding-right:0.75rem}.px-3\.5{padding-left:0.875rem;padding-right:0.875rem}.px-5{padding-left:1.25rem;padding-right:1.25rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.px-7{padding-left:1.75rem;padding-right:1.75rem}.py-1{padding-top:0.25rem;padding-bottom:0.25rem}.py-1\.5{padding-top:0.375rem;padding-bottom:0.375rem}.py-12{padding-top:3rem;padding-bottom:3rem}.py-16{padding-top:4rem;padding-bottom:4rem}.py-2\.5{padding-top:0.625rem;padding-bottom:0.625rem}.py-3{padding-top:0.75rem;padding-bottom:0.75rem}.py-3\.5{padding-top:0.875rem;padding-bottom:0.875rem}.py-4{padding-top:1rem;padding-bottom:1rem}.pb-16{padding-bottom:4rem}.pb-3{padding-bottom:0.75rem}.pb-4{padding-bottom:1rem}.pl-4{padding-left:1rem}.pl-5{padding-left:1.25rem}.pt-20{padding-top:5rem}.pt-4{padding-top:1rem}.pt-6{padding-top:1.5rem}.text-center{text-align:center}.font-display{font-family:Syne, sans-serif}.font-mono{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace}.text-2xl{font-size:1.5rem;line-height:2rem}.text-3xl{font-size:1.875rem;line-height:2.25rem}.text-4xl{font-size:2.25rem;line-height:2.5rem}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:0.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-xs{font-size:0.75rem;line-height:1rem}.font-bold{font-weight:700}.font-extrabold{font-weight:800}.font-medium{font-weight:500}.font-normal{font-weight:400}.font-semibold{font-weight:600}.uppercase{text-transform:uppercase}.italic{font-style:italic}.leading-none{line-height:1}.leading-relaxed{line-height:1.625}.tracking-tight{letter-spacing:-0.025em}.tracking-wider{letter-spacing:0.05em}.tracking-widest{letter-spacing:0.1em}.text-amber-300{--tw-text-opacity:1;color:rgb(252 211 77 / var(--tw-text-opacity, 1))}.text-amber-600{--tw-text-opacity:1;color:rgb(217 119 6 / var(--tw-text-opacity, 1))}.text-amber-800{--tw-text-opacity:1;color:rgb(146 64 14 / var(--tw-text-opacity, 1))}.text-blue-300{--tw-text-opacity:1;color:rgb(147 197 253 / var(--tw-text-opacity, 1))}.text-blue-600{--tw-text-opacity:1;color:rgb(37 99 235 / var(--tw-text-opacity, 1))}.text-blue-800{--tw-text-opacity:1;color:rgb(30 64 175 / var(--tw-text-opacity, 1))}.text-brand-accent{--tw-text-opacity:1;color:rgb(224 90 71 / var(--tw-text-opacity, 1))}.text-brand-terracotta{--tw-text-opacity:1;color:rgb(168 67 50 / var(--tw-text-opacity, 1))}.text-emerald-300{--tw-text-opacity:1;color:rgb(110 231 183 / var(--tw-text-opacity, 1))}.text-emerald-700{--tw-text-opacity:1;color:rgb(4 120 87 / var(--tw-text-opacity, 1))}.text-emerald-800{--tw-text-opacity:1;color:rgb(6 95 70 / var(--tw-text-opacity, 1))}.text-purple-300{--tw-text-opacity:1;color:rgb(216 180 254 / var(--tw-text-opacity, 1))}.text-purple-600{--tw-text-opacity:1;color:rgb(147 51 234 / var(--tw-text-opacity, 1))}.text-purple-800{--tw-text-opacity:1;color:rgb(107 33 168 / var(--tw-text-opacity, 1))}.text-red-300{--tw-text-opacity:1;color:rgb(252 165 165 / var(--tw-text-opacity, 1))}.text-red-600{--tw-text-opacity:1;color:rgb(220 38 38 / var(--tw-text-opacity, 1))}.text-red-800{--tw-text-opacity:1;color:rgb(153 27 27 / var(--tw-text-opacity, 1))}.text-stone-300{--tw-text-opacity:1;color:rgb(214 211 209 / var(--tw-text-opacity, 1))}.text-stone-400{--tw-text-opacity:1;color:rgb(168 162 158 / var(--tw-text-opacity, 1))}.text-stone-500{--tw-text-opacity:1;color:rgb(120 113 108 / var(--tw-text-opacity, 1))}.text-stone-600{--tw-text-opacity:1;color:rgb(87 83 78 / var(--tw-text-opacity, 1))}.text-stone-700{--tw-text-opacity:1;color:rgb(68 64 60 / var(--tw-text-opacity, 1))}.text-stone-800{--tw-text-opacity:1;color:rgb(41 37 36 / var(--tw-text-opacity, 1))}.text-stone-900{--tw-text-opacity:1;color:rgb(28 25 23 / var(--tw-text-opacity, 1))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.line-through{-webkit-text-decoration-line:line-through;text-decoration-line:line-through}.antialiased{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.shadow-md{--tw-shadow:0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-sm{--tw-shadow:0 1px 2px 0 rgb(0 0 0 / 0.05);--tw-shadow-colored:0 1px 2px 0 var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-xl{--tw-shadow:0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.transition{transition-property:color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.duration-300{transition-duration:300ms}.hover\:-translate-y-1\.5:hover{--tw-translate-y:-0.375rem;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.hover\:bg-brand-accent:hover{--tw-bg-opacity:1;background-color:rgb(224 90 71 / var(--tw-bg-opacity, 1))}.hover\:bg-stone-100:hover{--tw-bg-opacity:1;background-color:rgb(245 245 244 / var(--tw-bg-opacity, 1))}.hover\:bg-stone-200:hover{--tw-bg-opacity:1;background-color:rgb(231 229 228 / var(--tw-bg-opacity, 1))}.hover\:text-brand-accent:hover{--tw-text-opacity:1;color:rgb(224 90 71 / var(--tw-text-opacity, 1))}.hover\:text-stone-900:hover{--tw-text-opacity:1;color:rgb(28 25 23 / var(--tw-text-opacity, 1))}.hover\:opacity-90:hover{opacity:0.9}.group:hover .group-hover\:text-brand-accent{--tw-text-opacity:1;color:rgb(224 90 71 / var(--tw-text-opacity, 1))}.group:hover .group-hover\:underline{-webkit-text-decoration-line:underline;text-decoration-line:underline}@media (min-width: 640px){.sm\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}}@media (min-width: 768px){.md\:mt-0{margin-top:0px}.md\:flex{display:flex}.md\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.md\:grid-cols-4{grid-template-columns:repeat(4, minmax(0, 1fr))}.md\:flex-row{flex-direction:row}.md\:items-end{align-items:flex-end}.md\:items-center{align-items:center}.md\:self-auto{align-self:auto}.md\:p-12{padding:3rem}.md\:text-right{text-align:right}.md\:text-3xl{font-size:1.875rem;line-height:2.25rem}.md\:text-4xl{font-size:2.25rem;line-height:2.5rem}.md\:text-5xl{font-size:3rem;line-height:1}.md\:text-6xl{font-size:3.75rem;line-height:1}}@media (min-width: 1024px){.lg\:col-span-2{grid-column:span 2 / span 2}.lg\:col-span-4{grid-column:span 4 / span 4}.lg\:col-span-8{grid-column:span 8 / span 8}.lg\:grid-cols-12{grid-template-columns:repeat(12, minmax(0, 1fr))}.lg\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}}</style></head>
-<body class="antialiased min-h-screen flex flex-col justify-between">
+}
 
-  <nav class="sticky top-0 z-50 glass-card border-b border-stone-200/80 px-6 py-4">
-    <div class="max-w-7xl mx-auto flex justify-between items-center">
-      <a href="file:///C:/Users/shara/Downloads/gemini-code-1788636276636.html#" onclick="showPage(&#39;home&#39;)" class="text-xl font-extrabold tracking-tight font-display text-stone-900 hover:text-brand-accent transition">
-        SHARAYU<span class="text-brand-accent">.</span>
-      </a>
-      <div class="hidden md:flex items-center space-x-8 text-sm font-semibold text-stone-600">
-        <a href="file:///C:/Users/shara/Downloads/gemini-code-1788636276636.html#about" onclick="showPage(&#39;home&#39;); setTimeout(() =&gt; document.getElementById(&#39;about&#39;).scrollIntoView(), 100)" class="hover:text-stone-900 transition">About</a>
-        <a href="file:///C:/Users/shara/Downloads/gemini-code-1788636276636.html#experience" onclick="showPage(&#39;home&#39;); setTimeout(() =&gt; document.getElementById(&#39;experience&#39;).scrollIntoView(), 100)" class="hover:text-stone-900 transition">Experience</a>
-        <a href="file:///C:/Users/shara/Downloads/gemini-code-1788636276636.html#projects" onclick="showPage(&#39;home&#39;); setTimeout(() =&gt; document.getElementById(&#39;projects&#39;).scrollIntoView(), 100)" class="hover:text-stone-900 transition">Projects</a>
-        <a href="file:///C:/Users/shara/Downloads/gemini-code-1788636276636.html#skills" onclick="showPage(&#39;home&#39;); setTimeout(() =&gt; document.getElementById(&#39;skills&#39;).scrollIntoView(), 100)" class="hover:text-stone-900 transition">Capabilities</a>
-      </div>
-      <a href="mailto:sharayusudhir.dhakulkar@edhec.com" class="px-5 py-2.5 rounded-full bg-stone-900 text-white font-medium text-xs tracking-wider uppercase hover:bg-brand-accent transition shadow-sm">
-        Get In Touch
-      </a>
+.exp-role-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--text);
+}
+
+.exp-company-sub {
+    font-family: var(--font-heading);
+    font-style: italic;
+    color: var(--accent);
+    font-size: 1.05rem;
+    margin-top: 0.15rem;
+}
+
+.exp-date-pill {
+    align-self: flex-start;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    padding: 6px 14px;
+    background: #F4F4F5;
+    color: var(--text-light);
+    border-radius: 50px;
+    border: 1px solid var(--border);
+}
+
+@media (min-width: 768px) {
+    .exp-date-pill {
+        align-self: auto;
+    }
+}
+
+.exp-bullet-list {
+    list-style-type: disc;
+    padding-left: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.65rem;
+    color: var(--text-light);
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+/* Two-Column Grid for Education & Toolkit */
+.academic-toolkit-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+}
+
+@media (min-width: 900px) {
+    .academic-toolkit-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 3.5rem;
+    }
+}
+
+/* Education Cards */
+.edu-stack {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.edu-date-badge {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--text-light);
+    letter-spacing: 0.04em;
+}
+
+.edu-degree {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--text);
+    margin-top: 0.25rem;
+}
+
+.edu-institution {
+    font-size: 0.95rem;
+    color: var(--accent);
+    font-weight: 500;
+    margin-bottom: 0.75rem;
+}
+
+.edu-coursework {
+    font-size: 0.85rem;
+    color: var(--text-light);
+    line-height: 1.55;
+    border-top: 1px dashed var(--border);
+    padding-top: 0.75rem;
+}
+
+/* Capabilities & Toolkit Card */
+.toolkit-block {
+    display: flex;
+    flex-direction: column;
+    gap: 1.75rem;
+}
+
+.group-heading {
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--text-light);
+    margin-bottom: 0.75rem;
+}
+
+.caps-pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.skill-pill {
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 6px 14px;
+    border-radius: 50px;
+    background: #F8F9FA;
+    border: 1px solid var(--border);
+    color: var(--text);
+}
+
+.cert-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+    color: var(--text-light);
+}
+
+.cert-list li::before {
+    content: "• ";
+    color: var(--accent);
+    font-weight: bold;
+}
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="#" class="logo">Sharayu.</a>
+        <div class="nav-links">
+            <a href="#work">Work</a>
+            <a href="#experience">Career</a>
+            <a href="#expertise">Capabilities</a>
+            <a href="#about">About</a>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section with Creative Photo Frame -->
+        <section class="hero container">
+            <div class="hero-layout">
+                <div>
+                    <div class="availability-badge fade-up">
+                        <span class="dot"></span> Available for Work
+                    </div>
+                    <h1 class="text-xl fade-up" style="transition-delay: 0.1s;">
+                        Hi, I'm Sharayu, a <br>
+                        <span class="italic"><span id="dynamic-text"></span><span class="cursor">|</span></span>
+                    </h1>
+                    <h2 class="text-lg fade-up" style="color: var(--text-light); transition-delay: 0.2s; margin-top: 1.2rem; font-size: 1.5rem; line-height: 1.4;">
+                        translating behavioral insights and complex commercial data into clear, high-impact growth strategies.
+                    </h2>
+                    <div class="cta-group">
+  <a href="#work" class="btn btn-primary">
+    Explore Case Studies
+  </a>
+  <a href="https://www.linkedin.com/in/sharayu7/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+    LinkedIn Profile ↗
+  </a>
+</div>
+                </div>
+
+                <!-- Creative Profile Frame -->
+                <div class="hero-portrait-container fade-up" style="transition-delay: 0.3s;">
+                    <div class="hero-portrait-backdrop"></div>
+                    <div class="hero-portrait-frame">
+                        <!-- Replace src with your profile photo URL or local asset -->
+                        <img src="./sharayu.png" alt="Sharayu Dhakulkar">
+                    </div>
+                    <span class="portrait-tag">Marketing Consultant </span>
+                    
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Projects List -->
+        <section id="work" class="container">
+            <br/>
+            <h2 class="text-lg fade-up">Featured Case Studies</h2>
+            <p style="color: var(--text-light); margin-top: 0.5rem;" class="fade-up">Click on any project to explore the interactive visual summary, performance metrics, and embedded drive report.</p>
+            
+            <div class="work-grid">
+                <!-- Project 1: Vscan Air -->
+                <article class="project-card fade-up">
+                    <div class="project-img-wrapper" onclick="openProjectModal('vscan')">
+                        <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?q=80&w=2070&auto=format&fit=crop" alt="Vscan Air Ultrasound">
+                    </div>
+                    <div class="project-info">
+                        <span style="font-size: 0.8rem; font-weight:700; color:var(--accent); text-transform:uppercase;">GE HealthCare</span>
+                        <h3 style="font-size: 1.8rem; margin-top: 0.25rem;">Vscan Air Handheld Ultrasound</h3>
+                        <p style="margin-top: 0.8rem; color: var(--text-light); font-size: 0.95rem;">
+                            Translating a wireless handheld ultrasound device into a clinical and commercial value proposition for European healthcare networks.
+                        </p>
+                        <div class="metric-badge">
+                            <span>Key Impact</span>
+                            <strong>2–4 Wks → ~15 Min Diagnostic Time</strong>
+                        </div>
+                        <div class="project-tags">
+                            <span class="tag">#Product Marketing</span>
+                            <span class="tag">#GTM Roadmap</span>
+                            <span class="tag">#HealthTech</span>
+                        </div>
+                        <button class="open-detail-btn" onclick="openProjectModal('vscan')">View Infographic & Report →</button>
+                    </div>
+                </article>
+
+                <!-- Project 2: Stellest -->
+                <article class="project-card fade-up">
+                    <div class="project-img-wrapper" onclick="openProjectModal('stellest')">
+                        <img src="https://images.unsplash.com/photo-1511499767150-a48a237f0083?q=80&w=2080&auto=format&fit=crop" alt="Stellest Myopia Care">
+                    </div>
+                    <div class="project-info">
+                        <span style="font-size: 0.8rem; font-weight:700; color:var(--accent); text-transform:uppercase;">EssilorLuxottica</span>
+                        <h3 style="font-size: 1.8rem; margin-top: 0.25rem;">Stellest® Behaviour Change</h3>
+                        <p style="margin-top: 0.8rem; color: var(--text-light); font-size: 0.95rem;">
+                            Shifting parental perception from simple corrective lenses to proactive clinical intervention for childhood myopia.
+                        </p>
+                        <div class="metric-badge">
+                            <span>Clinical Efficacy</span>
+                            <strong>67% Slowed Myopia Progression</strong>
+                        </div>
+                        <div class="project-tags">
+                            <span class="tag">#Behaviour Change</span>
+                            <span class="tag">#Integrated Campaign</span>
+                            <span class="tag">#MedComms</span>
+                        </div>
+                        <button class="open-detail-btn" onclick="openProjectModal('stellest')">View Infographic & Report →</button>
+                    </div>
+                </article>
+
+                <!-- Project 3: Danone x Alpro -->
+                <article class="project-card fade-up">
+                    <div class="project-img-wrapper" onclick="openProjectModal('alpro')">
+                        <img src="https://images.unsplash.com/photo-1622483767028-3f66f32aef97?q=80&w=2070&auto=format&fit=crop" alt="Plant-based soda innovation">
+                    </div>
+                    <div class="project-info">
+                        <span style="font-size: 0.8rem; font-weight:700; color:var(--accent); text-transform:uppercase;">Danone × Alpro</span>
+                        <h3 style="font-size: 1.8rem; margin-top: 0.25rem;">Fizzy Protein Yogurt Soda Mix</h3>
+                        <p style="margin-top: 0.8rem; color: var(--text-light); font-size: 0.95rem;">
+                            Statistical concept validation, conjoint analysis, and optimal pricing strategy for an instant sparkling plant-protein sachet.
+                        </p>
+                        <div class="metric-badge">
+                            <span>Year 1 Revenue Potential</span>
+                            <strong>€59.55M Forecasted Scenario</strong>
+                        </div>
+                        <div class="project-tags">
+                            <span class="tag">#Conjoint Analysis</span>
+                            <span class="tag">#FMCG Innovation</span>
+                            <span class="tag">#Pricing Experiments</span>
+                        </div>
+                        <button class="open-detail-btn" onclick="openProjectModal('alpro')">View Infographic & Report →</button>
+                    </div>
+                </article>
+
+                <!-- Project 4: CreaWine -->
+                <article class="project-card fade-up">
+                    <div class="project-img-wrapper" onclick="openProjectModal('creawine')">
+                        <img src="https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?q=80&w=2070&auto=format&fit=crop" alt="Wine Experience">
+                    </div>
+                    <div class="project-info">
+                        <span style="font-size: 0.8rem; font-weight:700; color:var(--accent); text-transform:uppercase;">CréaWine</span>
+                        <h3 style="font-size: 1.8rem; margin-top: 0.25rem;">Spanish Market Phygital Entry</h3>
+                        <p style="margin-top: 0.8rem; color: var(--text-light); font-size: 0.95rem;">
+                            Validating at-home custom wine crafting using Pine & Gilmore’s 4E Experience Economy framework and quantitative consumer research.
+                        </p>
+                        <div class="metric-badge">
+                            <span>Consumer Validation</span>
+                            <strong>158 Primary Surveyed Respondents</strong>
+                        </div>
+                        <div class="project-tags">
+                            <span class="tag">#Market Entry</span>
+                            <span class="tag">#4E Experience Model</span>
+                            <span class="tag">#Phygital</span>
+                        </div>
+                        <button class="open-detail-btn" onclick="openProjectModal('creawine')">View Infographic & Report →</button>
+                    </div>
+                </article>
+
+                <!-- Project 5: Lacoste USA -->
+                <article class="project-card fade-up">
+                    <div class="project-img-wrapper" onclick="openProjectModal('lacoste')">
+                        <!-- Updated high-res Unsplash image for fashion / sportive elegance -->
+                        <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?q=80&w=2070&auto=format&fit=crop" alt="Lacoste Sportive Elegance Fashion">
+                    </div>
+                    <div class="project-info">
+                        <span style="font-size: 0.8rem; font-weight:700; color:var(--accent); text-transform:uppercase;">Lacoste USA</span>
+                        <h3 style="font-size: 1.8rem; margin-top: 0.25rem;">Gen Z Repositioning & Entry</h3>
+                        <p style="margin-top: 0.8rem; color: var(--text-light); font-size: 0.95rem;">
+                            Cross-cultural ETIC/EMIC laddering analysis repositioning French sportive elegance into culturally relevant streetwear channels.
+                        </p>
+                        <div class="metric-badge">
+                            <span>Market Priority Score</span>
+                            <strong>85/100 Evaluation Index</strong>
+                        </div>
+                        <div class="project-tags">
+                            <span class="tag">#Brand Repositioning</span>
+                            <span class="tag">#International Strategy</span>
+                            <span class="tag">#Gen Z</span>
+                        </div>
+                        <button class="open-detail-btn" onclick="openProjectModal('lacoste')">View Infographic & Report →</button>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Capabilities Section -->
+        <!-- <section id="expertise" class="container">
+            <h2 class="text-lg fade-up">Capabilities & Toolkit</h2>
+            <div class="services-grid fade-up">
+                <div>
+                    <h3>Strategy & Growth</h3>
+                    <ul>
+                        <li>Product Marketing & Positioning</li>
+                        <li>Go-To-Market (GTM) Architecture</li>
+                        <li>Consumer & Qualitative Insights</li>
+                        <li>Conjoint & Pricing Sensitivity</li>
+                        <li>Market Opportunity Sizing</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Data & Platforms</h3>
+                    <ul>
+                        <li>Google Analytics 4 & Search Console</li>
+                        <li>Tableau & Power BI Dashboards</li>
+                        <li>Adobe Experience Manager (AEM)</li>
+                        <li>Figma UI/UX Prototypes</li>
+                        <li>JIRA Agile Workflows</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Academic & Credentials</h3>
+                    <ul>
+                        <li>MSc Marketing Management — EDHEC Business School</li>
+                        <li>Brand Management — IIM Bangalore</li>
+                        <li>Creation & Branding — INSIDE LVMH</li>
+                        <li>AEM Certified Developer — Adobe</li>
+                    </ul>
+                </div>
+            </div>
+        </section> -->
+
+        <!-- Infinite Marquee -->
+        <div class="marquee-wrapper">
+            <div class="marquee">
+                <span>Brands I've Analyzed & Worked With</span>
+                <span>✦</span>
+                <span>GE HealthCare</span>
+                <span>✦</span>
+                <span>EssilorLuxottica</span>
+                <span>✦</span>
+                <span>Danone</span>
+                <span>✦</span>
+                <span>Alpro</span>
+                <span>✦</span>
+                <span>Lacoste</span>
+                <span>✦</span>
+                <span>PharmEasy</span>
+                <span>✦</span>
+                <span>TCS</span>
+                <span>✦</span>
+                <!-- Loop duplicate -->
+                <span>Brands I've Analyzed & Worked With</span>
+                <span>✦</span>
+                <span>GE HealthCare</span>
+                <span>✦</span>
+                <span>EssilorLuxottica</span>
+                <span>✦</span>
+                <span>Danone</span>
+                <span>✦</span>
+                <span>Alpro</span>
+                <span>✦</span>
+                <span>Lacoste</span>
+                <span>✦</span>
+                <span>PharmEasy</span>
+                <span>✦</span>
+                <span>TCS</span>
+                <span>✦</span>
+            </div>
+        </div>
+
+        <!-- Experience Timeline -->
+        <!-- ===================================================
+     CAREER HISTORY / PROFESSIONAL EXPERIENCE
+     =================================================== -->
+<section id="experience" class="container fade-up">
+    <br/>
+    <span class="section-sublabel">Career History</span>
+    <h2 class="section-title">Professional Experience</h2>
+
+    <div class="experience-container">
+        <!-- Role 1: PharmEasy -->
+        <div class="content-card">
+            <div class="exp-card-header">
+                <div>
+                    <h3 class="exp-role-title">Growth Marketing Intern</h3>
+                    <p class="exp-company-sub">PharmEasy (E-Pharmacy)</p>
+                </div>
+                <span class="exp-date-pill">Jan 2025 – Jul 2025</span>
+            </div>
+            <ul class="exp-bullet-list">
+                <li>Drove 10% growth in organic traffic and search visibility through keyword research, on-page SEO, qualitative/quantitative market analysis, and meta-tag optimization.</li>
+                <li>Executed end-to-end content strategy on WordPress across 30+ pages, maintaining strict brand alignment and tracking performance via Google Analytics &amp; Search Console.</li>
+                <li>Leveraged market research and web analytics to refine campaign concepts and elevate consumer engagement.</li>
+            </ul>
+        </div>
+
+        <!-- Role 2: TCS -->
+        <div class="content-card">
+            <div class="exp-card-header">
+                <div>
+                    <h3 class="exp-role-title">Digital Experience Analyst</h3>
+                    <p class="exp-company-sub">Tata Consultancy Services (TCS)</p>
+                </div>
+                <span class="exp-date-pill">Feb 2022 – Jun 2024</span>
+            </div>
+            <ul class="exp-bullet-list">
+                <li>Enhanced customer experience across 20+ digital applications using Adobe Experience Manager (AEM), maintaining design system consistency.</li>
+                <li>Authored comprehensive process documentation (user stories, release notes, estimation), cutting delivery delay from 1 week to 1–2 days.</li>
+                <li>Conducted usability checks, driving a 31% reduction in post-production bug reports.</li>
+            </ul>
+        </div>
+
+        <!-- Role 3: The Kiran Academy -->
+        <div class="content-card">
+            <div class="exp-card-header">
+                <div>
+                    <h3 class="exp-role-title">Web Designer</h3>
+                    <p class="exp-company-sub">The Kiran Academy</p>
+                </div>
+                <span class="exp-date-pill">Jul 2021 – Dec 2021</span>
+            </div>
+            <ul class="exp-bullet-list">
+                <li>Designed layout architectures in Figma and WordPress, refining visual consistency through iterative feedback.</li>
+            </ul>
+        </div>
     </div>
-  </nav>
+</section>
 
-  <main class="flex-grow">
+<!-- ===================================================
+     ACADEMIC BACKGROUND & TOOLKIT
+     =================================================== -->
+<section id="expertise" class="container fade-up">
+    <div class="academic-toolkit-grid">
+        <!-- Education Column -->
+        <div>
+            <br/>
+            <span class="section-sublabel">Academic Background</span>
+            <h2 class="section-title">Education</h2>
 
-    <div id="home" class="page-view active">
-      
-      <section class="max-w-7xl mx-auto px-6 pt-20 pb-16">
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-          <div class="lg:col-span-8 space-y-6">
-            <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-orange-100 text-brand-terracotta text-xs font-bold uppercase tracking-wider">
-              <span class="w-2 h-2 rounded-full bg-brand-accent animate-pulse"></span> MSc Marketing Management @ EDHEC Lille
-            </span>
-            <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight text-stone-900 leading-none">
-              At the intersection of <span class="italic font-normal text-stone-600">consumer insight</span>, innovation &amp; growth.
-            </h1>
-            <p class="text-lg text-stone-600 max-w-2xl leading-relaxed">
-              Marketing Professional with 3+ years of experience spanning digital experience, data-driven strategy, growth marketing, and product innovation. Translating complex analytics and human behavior into clear, high-impact commercial roadmaps.
-            </p>
-            <div class="pt-4 flex flex-wrap items-center gap-4">
-              <a href="file:///C:/Users/shara/Downloads/gemini-code-1788636276636.html#projects" class="px-7 py-3.5 rounded-full bg-brand-accent text-white font-semibold text-sm hover:opacity-90 transition shadow-md">
-                Explore Case Studies
-              </a>
-              <a href="https://www.linkedin.com/in/sharayu7/" target="_blank" class="px-7 py-3.5 rounded-full border border-stone-300 font-semibold text-sm hover:bg-stone-100 transition">
-                LinkedIn Profile ↗
-              </a>
-            </div>
-          </div>
-          
-          <div class="lg:col-span-4 glass-card p-6 rounded-3xl space-y-4 border border-stone-200">
-            <h3 class="text-xs uppercase font-bold tracking-widest text-stone-400">At A Glance</h3>
-            <div class="space-y-4">
-              <div class="border-b border-stone-100 pb-3">
-                <p class="text-xs text-stone-500">Current Role</p>
-                <p class="font-bold text-stone-800">MSc Marketing Student Consultant</p>
-              </div>
-              <div class="border-b border-stone-100 pb-3">
-                <p class="text-xs text-stone-500">Core Expertise</p>
-                <p class="font-bold text-stone-800">GTM Strategy, Product Innovation, Consumer Insights &amp; SEO</p>
-              </div>
-              <div>
-                <p class="text-xs text-stone-500">Location</p>
-                <p class="font-bold text-stone-800">Lille, France / Open to Global Roles</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="projects" class="max-w-7xl mx-auto px-6 py-16 border-t border-stone-200/60">
-        <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
-          <div>
-            <span class="text-xs font-bold tracking-widest uppercase text-brand-accent">Strategic Highlights</span>
-            <h2 class="text-3xl md:text-4xl font-bold mt-1">Featured Case Studies</h2>
-          </div>
-          <p class="text-stone-500 text-sm max-w-md mt-2 md:mt-0">
-            Click into any card for the full interactive visual summary, performance metrics, and methodology.
-          </p>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          
-          <div onclick="showPage(&#39;project-vscan&#39;)" class="group glass-card rounded-3xl p-7 border border-stone-200/80 cursor-pointer hover:-translate-y-1.5 transition duration-300 flex flex-col justify-between">
-            <div>
-              <div class="flex justify-between items-start mb-4">
-                <span class="pill-tag bg-emerald-50 text-emerald-800 border-emerald-200">GE HealthCare</span>
-                <span class="text-xs font-mono font-bold text-stone-400">01</span>
-              </div>
-              <h3 class="text-2xl font-bold text-stone-900 group-hover:text-brand-accent transition mb-2">Vscan Air</h3>
-              <p class="text-xs font-semibold uppercase tracking-wider text-stone-500 mb-3">Product Marketing &amp; Go-to-Market Strategy</p>
-              <p class="text-sm text-stone-600 line-clamp-3 mb-6">
-                Translating a wireless handheld ultrasound device into a clinical and commercial value proposition for European healthcare markets.
-              </p>
-            </div>
-            <div>
-              <div class="bg-stone-50 p-3 rounded-xl mb-4 border border-stone-100">
-                <p class="text-xs text-stone-500">Key Metric</p>
-                <p class="text-lg font-bold text-stone-800">2–4 Wks → ~15 Min Diagnostic Time</p>
-              </div>
-              <span class="text-xs font-bold uppercase tracking-wider text-brand-accent group-hover:underline flex items-center gap-1">
-                View Infographic Case Study →
-              </span>
-            </div>
-          </div>
-
-          <div onclick="showPage(&#39;project-stellest&#39;)" class="group glass-card rounded-3xl p-7 border border-stone-200/80 cursor-pointer hover:-translate-y-1.5 transition duration-300 flex flex-col justify-between">
-            <div>
-              <div class="flex justify-between items-start mb-4">
-                <span class="pill-tag bg-blue-50 text-blue-800 border-blue-200">EssilorLuxottica</span>
-                <span class="text-xs font-mono font-bold text-stone-400">02</span>
-              </div>
-              <h3 class="text-2xl font-bold text-stone-900 group-hover:text-brand-accent transition mb-2">Stellest®</h3>
-              <p class="text-xs font-semibold uppercase tracking-wider text-stone-500 mb-3">Integrated Behaviour-Change Campaign</p>
-              <p class="text-sm text-stone-600 line-clamp-3 mb-6">
-                Shifting parental mindsets from simple myopia correction to proactive childhood vision management.
-              </p>
-            </div>
-            <div>
-              <div class="bg-stone-50 p-3 rounded-xl mb-4 border border-stone-100">
-                <p class="text-xs text-stone-500">Clinical Impact</p>
-                <p class="text-lg font-bold text-stone-800">67% Myopia Progression Slowed</p>
-              </div>
-              <span class="text-xs font-bold uppercase tracking-wider text-brand-accent group-hover:underline flex items-center gap-1">
-                View Infographic Case Study →
-              </span>
-            </div>
-          </div>
-
-          <div onclick="showPage(&#39;project-alpro&#39;)" class="group glass-card rounded-3xl p-7 border border-stone-200/80 cursor-pointer hover:-translate-y-1.5 transition duration-300 flex flex-col justify-between">
-            <div>
-              <div class="flex justify-between items-start mb-4">
-                <span class="pill-tag bg-amber-50 text-amber-800 border-amber-200">Alpro / Danone</span>
-                <span class="text-xs font-mono font-bold text-stone-400">03</span>
-              </div>
-              <h3 class="text-2xl font-bold text-stone-900 group-hover:text-brand-accent transition mb-2">Danone × Alpro</h3>
-              <p class="text-xs font-semibold uppercase tracking-wider text-stone-500 mb-3">Consumer-Led Innovation Strategy</p>
-              <p class="text-sm text-stone-600 line-clamp-3 mb-6">
-                Validating a novel "Fizzy Protein Yogurt Soda Mix" using conjoint analysis and pricing sensitivity experiments.
-              </p>
-            </div>
-            <div>
-              <div class="bg-stone-50 p-3 rounded-xl mb-4 border border-stone-100">
-                <p class="text-xs text-stone-500">Year 1 Potential</p>
-                <p class="text-lg font-bold text-stone-800">€59.55M Projected Revenue</p>
-              </div>
-              <span class="text-xs font-bold uppercase tracking-wider text-brand-accent group-hover:underline flex items-center gap-1">
-                View Infographic Case Study →
-              </span>
-            </div>
-          </div>
-
-          <div onclick="showPage(&#39;project-creawine&#39;)" class="group glass-card rounded-3xl p-7 border border-stone-200/80 cursor-pointer hover:-translate-y-1.5 transition duration-300 flex flex-col justify-between">
-            <div>
-              <div class="flex justify-between items-start mb-4">
-                <span class="pill-tag bg-purple-50 text-purple-800 border-purple-200">CréaWine</span>
-                <span class="text-xs font-mono font-bold text-stone-400">04</span>
-              </div>
-              <h3 class="text-2xl font-bold text-stone-900 group-hover:text-brand-accent transition mb-2">CréaWine</h3>
-              <p class="text-xs font-semibold uppercase tracking-wider text-stone-500 mb-3">Evidence-Based Market Entry — Spain</p>
-              <p class="text-sm text-stone-600 line-clamp-3 mb-6">
-                Applying the 4E Experience Economy framework to launch a phygital wine creation experience in Spain.
-              </p>
-            </div>
-            <div>
-              <div class="bg-stone-50 p-3 rounded-xl mb-4 border border-stone-100">
-                <p class="text-xs text-stone-500">Research Base</p>
-                <p class="text-lg font-bold text-stone-800">158 Primary Surveyed Consumers</p>
-              </div>
-              <span class="text-xs font-bold uppercase tracking-wider text-brand-accent group-hover:underline flex items-center gap-1">
-                View Infographic Case Study →
-              </span>
-            </div>
-          </div>
-
-          <div onclick="showPage(&#39;project-lacoste&#39;)" class="group glass-card rounded-3xl p-7 border border-stone-200/80 cursor-pointer hover:-translate-y-1.5 transition duration-300 flex flex-col justify-between">
-            <div>
-              <div class="flex justify-between items-start mb-4">
-                <span class="pill-tag bg-red-50 text-red-800 border-red-200">Lacoste</span>
-                <span class="text-xs font-mono font-bold text-stone-400">05</span>
-              </div>
-              <h3 class="text-2xl font-bold text-stone-900 group-hover:text-brand-accent transition mb-2">Lacoste USA</h3>
-              <p class="text-xs font-semibold uppercase tracking-wider text-stone-500 mb-3">International Positioning &amp; Entry</p>
-              <p class="text-sm text-stone-600 line-clamp-3 mb-6">
-                Cross-cultural screening (ETIC/EMIC) and laddering research to reposition "French sportive elegance" for US Gen Z.
-              </p>
-            </div>
-            <div>
-              <div class="bg-stone-50 p-3 rounded-xl mb-4 border border-stone-100">
-                <p class="text-xs text-stone-500">Market Screening Score</p>
-                <p class="text-lg font-bold text-stone-800">85 / 100 Priority Selection</p>
-              </div>
-              <span class="text-xs font-bold uppercase tracking-wider text-brand-accent group-hover:underline flex items-center gap-1">
-                View Infographic Case Study →
-              </span>
-            </div>
-          </div>
-
-        </div>
-      </section>
-
-      <section id="experience" class="max-w-7xl mx-auto px-6 py-16 border-t border-stone-200/60">
-        <div class="mb-12">
-          <span class="text-xs font-bold tracking-widest uppercase text-brand-accent">Career History</span>
-          <h2 class="text-3xl md:text-4xl font-bold mt-1">Professional Experience</h2>
-        </div>
-
-        <div class="space-y-8">
-          <div class="glass-card p-8 rounded-3xl border border-stone-200/80">
-            <div class="flex flex-col md:flex-row md:items-center justify-between border-b border-stone-100 pb-4 mb-4 gap-2">
-              <div>
-                <h3 class="text-xl font-bold text-stone-900">Growth Marketing Intern</h3>
-                <p class="text-sm font-semibold text-brand-terracotta">PharmEasy (E-Pharmacy)</p>
-              </div>
-              <span class="text-xs font-semibold px-3 py-1 bg-stone-100 rounded-full text-stone-600 self-start md:self-auto">Jan 2025 – Jul 2025</span>
-            </div>
-            <ul class="space-y-2 text-stone-600 text-sm list-disc pl-5">
-              <li>Drove 10% growth in organic traffic and search visibility through keyword research, on-page SEO, qualitative/quantitative market analysis, and meta-tag optimization.</li>
-              <li>Executed end-to-end content strategy on WordPress across 30+ pages, maintaining strict brand alignment and tracking performance via Google Analytics &amp; Search Console.</li>
-              <li>Leveraged market research and web analytics to refine campaign concepts and elevate consumer engagement.</li>
-            </ul>
-          </div>
-
-          <div class="glass-card p-8 rounded-3xl border border-stone-200/80">
-            <div class="flex flex-col md:flex-row md:items-center justify-between border-b border-stone-100 pb-4 mb-4 gap-2">
-              <div>
-                <h3 class="text-xl font-bold text-stone-900">Digital Experience Analyst</h3>
-                <p class="text-sm font-semibold text-brand-terracotta">Tata Consultancy Services (TCS)</p>
-              </div>
-              <span class="text-xs font-semibold px-3 py-1 bg-stone-100 rounded-full text-stone-600 self-start md:self-auto">Feb 2022 – Jun 2024</span>
-            </div>
-            <ul class="space-y-2 text-stone-600 text-sm list-disc pl-5">
-              <li>Enhanced customer experience across 20+ digital applications using Adobe Experience Manager (AEM), maintaining design system consistency.</li>
-              <li>Authored comprehensive process documentation (user stories, release notes, estimation), cutting delivery delay from 1 week to 1–2 days.</li>
-              <li>Conducted usability checks, driving a 31% reduction in post-production bug reports.</li>
-            </ul>
-          </div>
-
-          <div class="glass-card p-8 rounded-3xl border border-stone-200/80">
-            <div class="flex flex-col md:flex-row md:items-center justify-between border-b border-stone-100 pb-4 mb-4 gap-2">
-              <div>
-                <h3 class="text-xl font-bold text-stone-900">Web Designer</h3>
-                <p class="text-sm font-semibold text-brand-terracotta">The Kiran Academy</p>
-              </div>
-              <span class="text-xs font-semibold px-3 py-1 bg-stone-100 rounded-full text-stone-600 self-start md:self-auto">Jul 2021 – Dec 2021</span>
-            </div>
-            <ul class="space-y-2 text-stone-600 text-sm list-disc pl-5">
-              <li>Designed layout architectures in Figma and WordPress, refining visual consistency through iterative feedback.</li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <section id="skills" class="max-w-7xl mx-auto px-6 py-16 border-t border-stone-200/60">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
-          
-          <div>
-            <span class="text-xs font-bold tracking-widest uppercase text-brand-accent">Academic Background</span>
-            <h2 class="text-3xl font-bold mt-1 mb-8">Education</h2>
-            <div class="space-y-6">
-              <div class="glass-card p-6 rounded-2xl border border-stone-200/80">
-                <span class="text-xs text-stone-400 font-semibold">Sep 2025 – Present</span>
-                <h3 class="text-lg font-bold text-stone-900 mt-1">MSc in Marketing Management</h3>
-                <p class="text-sm text-stone-600">EDHEC Business School, Lille</p>
-                <p class="text-xs text-stone-500 mt-3">Coursework: Digital Marketing, Product Development &amp; Innovation, International Marketing, Brand &amp; Communication Management, CRM, Marketing Intelligence.</p>
-              </div>
-              <div class="glass-card p-6 rounded-2xl border border-stone-200/80">
-                <span class="text-xs text-stone-400 font-semibold">Aug 2017 – May 2021</span>
-                <h3 class="text-lg font-bold text-stone-900 mt-1">B.E. in Electronics &amp; Telecommunication</h3>
-                <p class="text-sm text-stone-600">Mumbai University, India</p>
-                <p class="text-xs text-stone-500 mt-3">Coursework: Database Management Systems, Machine Learning, Problem-Solving, Project Management.</p>
-              </div>
-            </div>
-          </div>
-
-          <div>
-            <span class="text-xs font-bold tracking-widest uppercase text-brand-accent">Toolkit</span>
-            <h2 class="text-3xl font-bold mt-1 mb-8">Capabilities &amp; Certifications</h2>
-            <div class="glass-card p-6 rounded-2xl border border-stone-200/80 space-y-6">
-              <div>
-                <h4 class="text-xs font-bold uppercase tracking-wider text-stone-400 mb-3">Strategic Capabilities</h4>
-                <div class="flex flex-wrap gap-2">
-                  <span class="pill-tag">Product Marketing</span>
-                  <span class="pill-tag">Brand Strategy</span>
-                  <span class="pill-tag">User Research</span>
-                  <span class="pill-tag">GTM Execution</span>
-                  <span class="pill-tag">Market Sizing</span>
-                  <span class="pill-tag">Stakeholder Management</span>
+            <div class="edu-stack">
+                <div class="content-card">
+                    <span class="edu-date-badge">Sep 2025 – Present</span>
+                    <h3 class="edu-degree">MSc in Marketing Management</h3>
+                    <p class="edu-institution">EDHEC Business School, Lille</p>
+                    <p class="edu-coursework"><strong>Coursework:</strong> Digital Marketing, Product Development &amp; Innovation, International Marketing, Brand &amp; Communication Management, CRM, Marketing Intelligence.</p>
                 </div>
-              </div>
-              <div>
-                <h4 class="text-xs font-bold uppercase tracking-wider text-stone-400 mb-3">Technical Tools</h4>
-                <div class="flex flex-wrap gap-2">
-                  <span class="pill-tag">Google Analytics</span>
-                  <span class="pill-tag">Power BI</span>
-                  <span class="pill-tag">Tableau</span>
-                  <span class="pill-tag">Figma</span>
-                  <span class="pill-tag">Adobe Experience Manager</span>
-                  <span class="pill-tag">JIRA</span>
-                  <span class="pill-tag">SEO Tools</span>
+
+                <div class="content-card">
+                    <span class="edu-date-badge">Aug 2017 – May 2021</span>
+                    <h3 class="edu-degree">B.E. in Electronics &amp; Telecommunication</h3>
+                    <p class="edu-institution">Mumbai University, India</p>
+                    <p class="edu-coursework"><strong>Coursework:</strong> Database Management Systems, Machine Learning, Problem-Solving, Project Management.</p>
                 </div>
-              </div>
-              <div>
-                <h4 class="text-xs font-bold uppercase tracking-wider text-stone-400 mb-3">Certifications</h4>
-                <p class="text-xs text-stone-600 leading-relaxed">
-                  • UI/UX Design (Designerrs Academy)<br>
-                  • Brand Management (IIM Bangalore)<br>
-                  • Adobe Experience Manager Developer (Adobe)<br>
-                  • Creation &amp; Branding (INSIDE LVMH)
+            </div>
+        </div>
+
+        <!-- Capabilities & Certifications Column -->
+        <div>
+            <br/>
+            <span class="section-sublabel">Toolkit</span>
+            <h2 class="section-title">Skills &amp; Certifications</h2>
+
+            <div class="content-card toolkit-block">
+                <div>
+                    <h4 class="group-heading">Strategic Capabilities</h4>
+                    <div class="caps-pills">
+                        <span class="skill-pill">Product Marketing</span>
+                        <span class="skill-pill">Brand Strategy</span>
+                        <span class="skill-pill">User Research</span>
+                        <span class="skill-pill">GTM Execution</span>
+                        <span class="skill-pill">Market Sizing</span>
+                        <span class="skill-pill">Stakeholder Management</span>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="group-heading">Technical Tools</h4>
+                    <div class="caps-pills">
+                        <span class="skill-pill">Google Analytics</span>
+                        <span class="skill-pill">Power BI</span>
+                        <span class="skill-pill">Tableau</span>
+                        <span class="skill-pill">Figma</span>
+                        <span class="skill-pill">Adobe Experience Manager</span>
+                        <span class="skill-pill">JIRA</span>
+                        <span class="skill-pill">SEO Tools</span>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="group-heading">Certifications</h4>
+                    <ul class="cert-list">
+                        <li>UI/UX Design (Designerrs Academy)</li>
+                        <li>Brand Management (IIM Bangalore)</li>
+                        <li>Adobe Experience Manager Developer (Adobe)</li>
+                        <li>Creation &amp; Branding (INSIDE LVMH)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+        <!-- About & FAQs -->
+         <br/>
+        <section id="about" class="container">
+            <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+                <h2 class="text-lg fade-up">About Me</h2>
+                <p class="fade-up" style="margin: 2rem 0; font-size: 1.1rem; color: var(--text-light);">
+                    I am a marketing professional with over three years of experience spanning digital experience, data-driven strategy, and product innovation. Currently pursuing my MSc at EDHEC in Lille, France, I thrive on translating market gaps into actionable business strategies.
                 </p>
-              </div>
             </div>
-          </div>
 
+            <div style="max-width: 600px; margin: 5rem auto 0;" class="fade-up">
+                <h3 style="margin-bottom: 2rem; font-size: 2rem;">FAQs</h3>
+                
+                <div class="faq-item">
+                    <button class="faq-question">Where are you located? <span class="icon">+</span></button>
+                    <div class="faq-answer">
+                        <p>I am currently based in Lille, France, completing my MSc at EDHEC Business School, but I am open to global roles and relocation opportunities.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">What is your core expertise? <span class="icon">+</span></button>
+                    <div class="faq-answer">
+                        <p>My primary focus is on Go-To-Market (GTM) Strategy, Product Innovation, Consumer Insights, and Digital Experience optimization.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">Are you available for work? <span class="icon">+</span></button>
+                    <div class="faq-answer">
+                        <p>Yes, I am currently available for new opportunities. Please feel free to reach out via the contact form or LinkedIn to discuss potential collaborations.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <div style="max-width: 600px; margin: 5rem auto 0;" class="fade-up">
+                <h2 class="text-lg">Let's Connect</h2>
+                <form class="contact-form">
+                    <div class="input-group">
+                        <input type="text" placeholder="Name *" required>
+                    </div>
+                    <div class="input-group">
+                        <input type="email" placeholder="Email *" required>
+                    </div>
+                    <div class="input-group">
+                        <textarea rows="3" placeholder="Message" required></textarea>
+                    </div>
+                    <button type="button" class="submit-btn" onclick="window.location.href='mailto:sharayusudhir.dhakulkar@edhec.com'">Submit via Email</button>
+                </form>
+            </div> -->
+        </section>
+    </main>
+
+    <!-- Project Infographic & Report Viewer Modal (Fixed) -->
+    <div id="projectModal" class="modal-overlay" onclick="handleBackdropClick(event)">
+        <div class="modal-container">
+            <button class="modal-close-btn" onclick="closeProjectModal()">✕ Close Window</button>
+            <div id="modalContent"></div>
         </div>
-      </section>
-
     </div>
 
-
-    <div id="project-vscan" class="page-view max-w-6xl mx-auto px-6 py-12">
-      <button onclick="showPage(&#39;home&#39;)" class="mb-8 text-xs font-bold uppercase tracking-wider text-stone-500 hover:text-brand-accent flex items-center gap-1">
-        ← Back to Overview
-      </button>
-
-      <div class="bg-stone-900 text-white rounded-3xl p-8 md:p-12 mb-8 shadow-xl">
-        <div class="flex flex-wrap justify-between items-start gap-4 mb-6">
-          <span class="px-3 py-1 rounded-full bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 text-xs font-bold uppercase">GE HealthCare • Product Marketing &amp; GTM</span>
-          <span class="text-stone-400 font-mono text-sm">Case Study 01</span>
+    <footer>
+        <div class="footer-name fade-up">Sharayu Dhakulkar</div>
+        <div style="display:flex; justify-content:center; gap:2rem; font-size:0.9rem; text-transform:uppercase; letter-spacing:0.05em;" class="fade-up">
+            <a href="mailto:sharayusudhir.dhakulkar@edhec.com">Email Me</a>
+            <a href="https://www.linkedin.com/in/sharayu7/" target="_blank">LinkedIn Profile</a>
+            <a href="tel:+33745512753">Direct Phone</a>
         </div>
-        <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight mb-4">Vscan Air</h1>
-        <p class="text-stone-300 text-lg max-w-3xl leading-relaxed">
-          Bringing diagnostic imaging closer to the point of care by overcoming workflow inertia in European emergency and primary healthcare settings.
-        </p>
-      </div>
+        <p style="margin-top: 3rem; font-size: 0.8rem; color: var(--text-light);">© 2026 Sharayu Dhakulkar. Crafted for strategy & performance.</p>
+    </footer>
 
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
-        <div class="glass-card p-5 rounded-2xl text-center">
-          <p class="text-2xl md:text-3xl font-extrabold text-stone-900">€5.4–6.0B</p>
-          <p class="text-xs text-stone-500 uppercase tracking-wider mt-1">Current POCUS Market</p>
-        </div>
-        <div class="glass-card p-5 rounded-2xl text-center">
-          <p class="text-2xl md:text-3xl font-extrabold text-emerald-700">430g</p>
-          <p class="text-xs text-stone-500 uppercase tracking-wider mt-1">Device Weight</p>
-        </div>
-        <div class="glass-card p-5 rounded-2xl text-center">
-          <p class="text-2xl md:text-3xl font-extrabold text-stone-900">€4.5K vs €50K</p>
-          <p class="text-xs text-stone-500 uppercase tracking-wider mt-1">Cost vs Traditional</p>
-        </div>
-        <div class="glass-card p-5 rounded-2xl text-center">
-          <p class="text-2xl md:text-3xl font-extrabold text-brand-accent">~15 Mins</p>
-          <p class="text-xs text-stone-500 uppercase tracking-wider mt-1">Diagnostic Time (vs 2-4 Wks)</p>
-        </div>
-      </div>
+    <script>
+        // Project Data with Infographic stats & Drive Shareable Links
+        const projectData = {
+            vscan: {
+                brand: "GE HealthCare",
+                category: "Product Marketing & GTM Architecture",
+                title: "Vscan Air™ Wireless Point-of-Care Ultrasound",
+                overview: "Decentralizing emergency & primary care diagnostics across European hospital networks by transforming traditional referral workflows into high-speed bedside triage.",
+                kpis: [
+                    { val: "€5.4–6.0B", label: "POCUS Market Size" },
+                    { val: "430g", label: "Ultra-Light Weight" },
+                    { val: "€4.5K vs €50K", label: "CapEx Advantage" },
+                    { val: "~15 Mins", label: "Bedside Diagnosis", accent: true }
+                ],
+                insightQuote: "The real competitor was not another diagnostic hardware vendor — it was workflow inertia and doing nothing.",
+                insightBody: "Traditional patient triage relied on congested radiologist queues with 2-to-4 week turnaround delays. Vscan Air eliminates behavioral resistance by offering instantaneous dual-probe scanning on handheld smartphones.",
+                stepsLabel: "4-Phase Go-to-Market Engine",
+                steps: [
+                    { step: "01", name: "Clinical Pilot", desc: "Select high-volume ICU units" },
+                    { step: "02", name: "KOL Advocacy", desc: "Peer evidence workshops" },
+                    { step: "03", name: "Triage Integration", desc: "Standard operating workflows" },
+                    { step: "04", name: "Pan-EU Scale", desc: "Cross-department adoption" }
+                ],
+                sideStatsTitle: "Year 1 Business Targets",
+                sideStats: [
+                    { label: "Target Accounts", val: "8–10 Key Hospitals" },
+                    { label: "Devices Deployed", val: "100–150 Units" },
+                    { label: "Clinician Adoption Rate", val: "75%+" },
+                    { label: "Initial Revenue Pool", val: "€450K – €675K" }
+                ],
+                driveSharableLink: "https://drive.google.com/file/d/1BxiMVs0XRA5nFMdKvBdBZjgmUUqptlbs/view?usp=sharing"
+            },
+            stellest: {
+                brand: "EssilorLuxottica",
+                category: "Integrated Behaviour-Change Campaign",
+                title: "Stellest® Childhood Myopia Management",
+                overview: "A multi-channel behavior shift program repositioning childhood vision from standard corrective glasses to early medical progression management.",
+                kpis: [
+                    { val: "50%", label: "Projected Myopia by 2050" },
+                    { val: "67%", label: "Progression Slowed", accent: true },
+                    { val: "<5%", label: "Initial Awareness" },
+                    { val: "€2.0–3.0M", label: "Year 1 Potential" }
+                ],
+                insightQuote: "Parents are not reluctant to invest in their child's vision. They simply did not know that progression can be clinically halted.",
+                insightBody: "Our strategic narrative centered on #ProtectTheirFuture, bridging the gap between parents and Pediatric Optometrists with prescriptive clinical toolkits and interactive retail screens.",
+                stepsLabel: "Campaign Conversion Architecture",
+                steps: [
+                    { step: "01", name: "Educate", desc: "Symptom awareness & screen risk" },
+                    { step: "02", name: "Consult", desc: "Accredited Optometrist exams" },
+                    { step: "03", name: "Prescribe", desc: "Evidence-backed lens fitting" },
+                    { step: "04", name: "Track", desc: "Bi-annual progression review" }
+                ],
+                sideStatsTitle: "Unit Economics & Commercials",
+                sideStats: [
+                    { label: "Target Acquisition Cost (CAC)", val: "€100 – €200" },
+                    { label: "Estimated Lifetime Value (LCV)", val: "€600 – €1,000" },
+                    { label: "Optometrist Conversion Rate", val: "60%+" },
+                    { label: "Practitioner Toolkits Shipped", val: "1,000+ Units" }
+                ],
+                driveSharableLink: "https://drive.google.com/file/d/1BxiMVs0XRA5nFMdKvBdBZjgmUUqptlbs/view?usp=sharing"
+            },
+            alpro: {
+                brand: "Danone × Alpro",
+                category: "Consumer-Led Product Innovation",
+                title: "Fizzy Protein Yogurt Soda Mix",
+                overview: "Validating an instant sparkling plant-protein sachet targeting Gen Z active consumers via statistical conjoint testing and pricing elasticity simulations.",
+                kpis: [
+                    { val: "864", label: "Product Iterations" },
+                    { val: "€1.20", label: "Ideal Trial Price", accent: true },
+                    { val: "39.7M", label: "Year 1 Sachets" },
+                    { val: "€59.55M", label: "Est. Revenue Potential" }
+                ],
+                insightQuote: "Flavor perception and entry price are 3x more critical than raw protein density for Gen Z trial.",
+                insightBody: "Through conjoint analysis across key European test markets, the winning variant combined Yuzu-Lychee with 15g plant protein. Findings favored single-sachet discovery (€1.20) rather than high-ticket multi-packs.",
+                stepsLabel: "Innovation Pipeline Milestones",
+                steps: [
+                    { step: "01", name: "Flavor Labs", desc: "Sensory & carbonation trials" },
+                    { step: "02", name: "Conjoint Study", desc: "864 feature configurations" },
+                    { step: "03", name: "Price Sensitivity", desc: "Van Westendorp thresholding" },
+                    { step: "04", name: "Pilot Launch", desc: "Impulse grab-and-go cooler rollout" }
+                ],
+                sideStatsTitle: "Positioning & Sensory Profile",
+                sideStats: [
+                    { label: "Brand Hook", val: "'Think Protein & Pop!'" },
+                    { label: "Trial Intent (Single)", val: "73% Purchase Intent" },
+                    { label: "Multi-pack Friction", val: "High Drop-off at €3.50" },
+                    { label: "Key Ingredient", val: "Oat-Almond Ferment Base" }
+                ],
+                driveSharableLink: "https://drive.google.com/file/d/1BxiMVs0XRA5nFMdKvBdBZjgmUUqptlbs/view?usp=sharing"
+            },
+            creawine: {
+                brand: "CréaWine Spain",
+                category: "Phygital Market Entry Strategy",
+                title: "Customized At-Home Winemaking Experience",
+                overview: "Translating Pine & Gilmore’s 4E Experience Economy framework into an experiential wine blending kit tailored for the Spanish wine landscape.",
+                kpis: [
+                    { val: "158", label: "Surveyed Consumers" },
+                    { val: "44.3%", label: "Identified Price Sensitivity" },
+                    { val: "5,000+", label: "Month 24 Volume Goal" },
+                    { val: "< €20", label: "Target Acquisition Cost", accent: true }
+                ],
+                insightQuote: "From 'learning about traditional wine' to 'becoming the artisan creator of your own vintage.'",
+                insightBody: "To overcome high legacy competition in Spain, CréaWine shifted focus away from academic enology toward entertainment and social escapism, verified through localized primary consumer panels.",
+                stepsLabel: "4E Experience Integration",
+                steps: [
+                    { step: "01", name: "Entertainment", desc: "Fun blending night rituals" },
+                    { step: "02", name: "Escapism", desc: "Role reversal as Master Blender" },
+                    { step: "03", name: "Esthetics", desc: "Premium handcrafted glass design" },
+                    { step: "04", name: "Education", desc: "Guided digital pairing notes" }
+                ],
+                sideStatsTitle: "Staged Decision Gates",
+                sideStats: [
+                    { label: "Gate 1 (Month 3)", val: "NPS +20 validation" },
+                    { label: "Gate 2 (Month 12)", val: "2,000 Direct Units Sold" },
+                    { label: "Gate 3 (Month 24)", val: "Positive Unit EBITDA" },
+                    { label: "Target Audience", val: "Millennial Urban Socializers" }
+                ],
+                driveSharableLink: "https://drive.google.com/file/d/1BxiMVs0XRA5nFMdKvBdBZjgmUUqptlbs/view?usp=sharing"
+            },
+            lacoste: {
+                brand: "Lacoste USA",
+                category: "International Brand Repositioning",
+                title: "Repositioning Sportive Elegance for US Gen Z",
+                overview: "Cross-cultural ETIC/EMIC consumer laddering study to adapt French athletic heritage for streetwear-driven American youth demographics.",
+                kpis: [
+                    { val: "9", label: "Global Markets Screened" },
+                    { val: "85/100", label: "US Market Index", accent: true },
+                    { val: "3", label: "Psychographic Segments" },
+                    { val: "Phygital", label: "Omnichannel Entry" }
+                ],
+                insightQuote: "American Gen Z admires Lacoste's heritage, but views it as distant, country-club formal rather than street-ready.",
+                insightBody: "Laddering research pinpointed the need to modernize the brand narrative from traditional country-club tennis attire to inclusive community expression, creator drops, and sustainable circular materials.",
+                stepsLabel: "Repositioning Pillars",
+                steps: [
+                    { step: "01", name: "Heritage Redux", desc: "Classic crocodile street silhouettes" },
+                    { step: "02", name: "Community Club", desc: "Open-access urban popups" },
+                    { step: "03", name: "Limited Drops", desc: "Collaborative creator capsules" },
+                    { step: "04", name: "Eco-Durability", desc: "Certified circular craftsmanship" }
+                ],
+                sideStatsTitle: "Target Audience Profiles",
+                sideStats: [
+                    { label: "Segment 1", val: "Minimalist Classicists" },
+                    { label: "Segment 2", val: "Inclusive Street Connectors" },
+                    { label: "Segment 3", val: "Expressive Trendsetters" },
+                    { label: "Retail Model", val: "Interactive Flagships + Direct DTC" }
+                ],
+                driveSharableLink: "https://drive.google.com/file/d/1BxiMVs0XRA5nFMdKvBdBZjgmUUqptlbs/view?usp=sharing"
+            }
+        };
 
-      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12">
-        <div class="lg:col-span-2 space-y-8">
-          <div class="glass-card p-8 rounded-3xl border border-stone-200/80">
-            <h3 class="text-xs font-bold uppercase tracking-widest text-brand-accent mb-2">Strategic Insight</h3>
-            <blockquote class="text-2xl font-bold text-stone-800 italic border-l-4 border-brand-accent pl-4 py-1 my-4">
-              "The real competitor wasn't another device — it was doing nothing."
-            </blockquote>
-            <p class="text-stone-600 text-sm leading-relaxed">
-              Traditional diagnostic pathways require long referral wait times. Vscan Air solves the behavioral friction by empowering clinicians with point-of-care ultrasound capabilities instantly.
-            </p>
-          </div>
+        // Convert standard Google Drive shareable URLs to embeddable preview links
+        function formatDrivePreviewUrl(link) {
+            if (!link) return '';
+            const match = link.match(/\/d\/([a-zA-Z0-9_-]+)/);
+            if (match && match[1]) {
+                return `https://drive.google.com/file/d/${match[1]}/preview`;
+            }
+            return link;
+        }
 
-          <div class="glass-card p-8 rounded-3xl border border-stone-200/80">
-            <h3 class="text-xl font-bold mb-6">4-Phase Go-to-Market Roadmap</h3>
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-              <div class="bg-stone-50 p-4 rounded-xl text-center border border-stone-200">
-                <span class="text-xs font-bold text-stone-400">PHASE 1</span>
-                <p class="font-bold text-stone-800 mt-1">Prepare</p>
-              </div>
-              <div class="bg-stone-50 p-4 rounded-xl text-center border border-stone-200">
-                <span class="text-xs font-bold text-stone-400">PHASE 2</span>
-                <p class="font-bold text-stone-800 mt-1">Launch</p>
-              </div>
-              <div class="bg-stone-50 p-4 rounded-xl text-center border border-stone-200">
-                <span class="text-xs font-bold text-stone-400">PHASE 3</span>
-                <p class="font-bold text-stone-800 mt-1">Activate</p>
-              </div>
-              <div class="bg-stone-50 p-4 rounded-xl text-center border border-stone-200">
-                <span class="text-xs font-bold text-stone-400">PHASE 4</span>
-                <p class="font-bold text-stone-800 mt-1">Scale</p>
-              </div>
-            </div>
-          </div>
-        </div>
+        // Open Modal with Infographic Content
+        function openProjectModal(projectId) {
+            const data = projectData[projectId];
+            if (!data) return;
 
-        <div class="glass-card p-8 rounded-3xl border border-stone-200/80 space-y-4">
-          <h3 class="text-lg font-bold text-stone-900 border-b border-stone-200 pb-3">Year 1 Business Targets</h3>
-          <ul class="space-y-3 text-sm text-stone-600">
-            <li class="flex justify-between"><span>Paying Customers:</span> <strong>8–10</strong></li>
-            <li class="flex justify-between"><span>Devices Deployed:</span> <strong>100–150</strong></li>
-            <li class="flex justify-between"><span>Clinician Adoption:</span> <strong>75%+</strong></li>
-            <li class="flex justify-between"><span>Target Revenue:</span> <strong>€450–675K</strong></li>
-            <li class="flex justify-between"><span>Qualified Pipeline:</span> <strong>€1.5M+</strong></li>
-          </ul>
-          <div class="pt-6 border-t border-stone-200">
-            <a href="file:///C:/Users/shara/Downloads/gemini-code-1788636276636.html#" class="block text-center py-3 rounded-xl bg-stone-100 hover:bg-stone-200 font-bold text-xs text-stone-800 tracking-wider uppercase transition">
-              Detailed PDF Report (Link Coming Soon)
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
+            const previewUrl = formatDrivePreviewUrl(data.driveSharableLink);
+            const modalContent = document.getElementById('modalContent');
+            const projectModal = document.getElementById('projectModal');
 
+            if (!modalContent || !projectModal) return;
 
-    <div id="project-stellest" class="page-view max-w-6xl mx-auto px-6 py-12">
-      <button onclick="showPage(&#39;home&#39;)" class="mb-8 text-xs font-bold uppercase tracking-wider text-stone-500 hover:text-brand-accent flex items-center gap-1">
-        ← Back to Overview
-      </button>
+            const contentHtml = `
+                <div class="info-hero">
+                    <span class="info-pill">${data.brand} • ${data.category}</span>
+                    <h2 style="font-family: var(--font-display); font-size: clamp(1.8rem, 4vw, 2.8rem); font-weight:800; line-height:1.1; margin-bottom: 0.8rem; color:#FFF;">
+                        ${data.title}
+                    </h2>
+                    <p style="color: #D1D5DB; font-size: 1.05rem; max-width: 800px; line-height: 1.6;">
+                        ${data.overview}
+                    </p>
+                </div>
 
-      <div class="bg-stone-900 text-white rounded-3xl p-8 md:p-12 mb-8 shadow-xl">
-        <div class="flex flex-wrap justify-between items-start gap-4 mb-6">
-          <span class="px-3 py-1 rounded-full bg-blue-500/20 text-blue-300 border border-blue-500/30 text-xs font-bold uppercase">EssilorLuxottica • Integrated Campaign Strategy</span>
-          <span class="text-stone-400 font-mono text-sm">Case Study 02</span>
-        </div>
-        <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight mb-4">Stellest®</h1>
-        <p class="text-stone-300 text-lg max-w-3xl leading-relaxed">
-          12-month behaviour-change campaign shifting parents and eye-care professionals from myopia correction to proactive management.
-        </p>
-      </div>
+                <div class="info-kpi-grid">
+                    ${data.kpis.map(kpi => `
+                        <div class="info-kpi-card">
+                            <div class="info-kpi-val ${kpi.accent ? 'accent' : ''}">${kpi.val}</div>
+                            <div class="info-kpi-label">${kpi.label}</div>
+                        </div>
+                    `).join('')}
+                </div>
 
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
-        <div class="glass-card p-5 rounded-2xl text-center">
-          <p class="text-2xl md:text-3xl font-extrabold text-stone-900">50%</p>
-          <p class="text-xs text-stone-500 uppercase tracking-wider mt-1">Global Myopia by 2050</p>
-        </div>
-        <div class="glass-card p-5 rounded-2xl text-center">
-          <p class="text-2xl md:text-3xl font-extrabold text-blue-600">67%</p>
-          <p class="text-xs text-stone-500 uppercase tracking-wider mt-1">Progression Reduction</p>
-        </div>
-        <div class="glass-card p-5 rounded-2xl text-center">
-          <p class="text-2xl md:text-3xl font-extrabold text-stone-900">&lt;5%</p>
-          <p class="text-xs text-stone-500 uppercase tracking-wider mt-1">Current Parent Awareness</p>
-        </div>
-        <div class="glass-card p-5 rounded-2xl text-center">
-          <p class="text-2xl md:text-3xl font-extrabold text-brand-accent">€2.0–3.0M</p>
-          <p class="text-xs text-stone-500 uppercase tracking-wider mt-1">Year 1 Target Revenue</p>
-        </div>
-      </div>
+                <div class="info-split-layout">
+                    <div class="info-card">
+                        <span style="font-size:0.75rem; font-weight:700; text-transform:uppercase; color:var(--accent); letter-spacing:0.05em;">Core Strategic Discovery</span>
+                        <div class="quote-box">"${data.insightQuote}"</div>
+                        <p style="color: var(--text-light); font-size: 0.95rem; line-height: 1.6; margin-bottom: 1.5rem;">
+                            ${data.insightBody}
+                        </p>
 
-      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12">
-        <div class="lg:col-span-2 space-y-8">
-          <div class="glass-card p-8 rounded-3xl border border-stone-200/80">
-            <h3 class="text-xs font-bold uppercase tracking-widest text-brand-accent mb-2">Consumer Insight</h3>
-            <blockquote class="text-2xl font-bold text-stone-800 italic border-l-4 border-brand-accent pl-4 py-1 my-4">
-              "Parents aren't reluctant. They simply don't know they need to act."
-            </blockquote>
-            <p class="text-stone-600 text-sm leading-relaxed">
-              Campaign Spine: <strong>#ProtectTheirFuture</strong> (Educate → Convince → Empower → Normalize)
-            </p>
-          </div>
+                        <span style="font-size:0.75rem; font-weight:700; text-transform:uppercase; color:var(--text); letter-spacing:0.05em;">${data.stepsLabel}</span>
+                        <div class="roadmap-grid">
+                            ${data.steps.map(s => `
+                                <div class="roadmap-step">
+                                    <span>STEP ${s.step}</span>
+                                    <strong>${s.name}</strong>
+                                    <p style="font-size:0.75rem; color:var(--text-light); margin-top:4px;">${s.desc}</p>
+                                </div>
+                            `).join('')}
+                        </div>
+                    </div>
 
-          <div class="glass-card p-8 rounded-3xl border border-stone-200/80">
-            <h3 class="text-xl font-bold mb-4">4-Pillar Campaign Engine</h3>
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm">
-              <div class="p-4 bg-stone-50 rounded-2xl">
-                <strong class="block text-stone-900 mb-1">1. Parent Digital Engagement</strong>
-                Targeted educational touchpoints addressing progressive vision loss.
-              </div>
-              <div class="p-4 bg-stone-50 rounded-2xl">
-                <strong class="block text-stone-900 mb-1">2. Optometrist Enablement</strong>
-                Toolkit &amp; accredited training for 1,000+ professionals.
-              </div>
-              <div class="p-4 bg-stone-50 rounded-2xl">
-                <strong class="block text-stone-900 mb-1">3. Retail Activation</strong>
-                In-store POS and consultation assets.
-              </div>
-              <div class="p-4 bg-stone-50 rounded-2xl">
-                <strong class="block text-stone-900 mb-1">4. Earned Media</strong>
-                Thought leadership and clinical trial storytelling.
-              </div>
-            </div>
-          </div>
-        </div>
+                    <div class="info-card" style="display:flex; flex-direction:column; justify-content:space-between;">
+                        <div>
+                            <h4 style="font-size: 1.15rem; font-weight: 700; margin-bottom: 1.25rem; border-bottom: 1px solid var(--border); padding-bottom: 0.75rem;">
+                                ${data.sideStatsTitle}
+                            </h4>
+                            <div style="display:flex; flex-direction:column; gap:1rem;">
+                                ${data.sideStats.map(item => `
+                                    <div style="display:flex; justify-content:space-between; align-items:center; font-size:0.9rem; border-bottom:1px dashed var(--border); padding-bottom:0.5rem;">
+                                        <span style="color:var(--text-light);">${item.label}</span>
+                                        <strong style="color:var(--text);">${item.val}</strong>
+                                    </div>
+                                `).join('')}
+                            </div>
+                        </div>
+                        <div style="margin-top: 1.5rem; background: #FFF7F5; border-radius: 12px; padding: 1rem; border: 1px solid rgba(224,90,71,0.2);">
+                            <p style="font-size: 0.8rem; color: var(--accent); font-weight: 600;">Executive Deliverable Ready</p>
+                            <p style="font-size: 0.75rem; color: var(--text-light);">Browse through the embedded document or view directly in Google Drive.</p>
+                        </div>
+                    </div>
+                </div>
 
-        <div class="glass-card p-8 rounded-3xl border border-stone-200/80 space-y-4">
-          <h3 class="text-lg font-bold text-stone-900 border-b border-stone-200 pb-3">Unit Economics</h3>
-          <div class="space-y-4 text-sm">
-            <div>
-              <p class="text-xs text-stone-500">Target CAC</p>
-              <p class="font-extrabold text-stone-800 text-lg">€100 – €200</p>
-            </div>
-            <div>
-              <p class="text-xs text-stone-500">Estimated LCV</p>
-              <p class="font-extrabold text-emerald-700 text-lg">€600 – €1,000</p>
-            </div>
-            <div>
-              <p class="text-xs text-stone-500">Doctor Referral Conversion</p>
-              <p class="font-extrabold text-stone-800 text-lg">60%+</p>
-            </div>
-          </div>
-          <div class="pt-6 border-t border-stone-200">
-            <a href="file:///C:/Users/shara/Downloads/gemini-code-1788636276636.html#" class="block text-center py-3 rounded-xl bg-stone-100 hover:bg-stone-200 font-bold text-xs text-stone-800 tracking-wider uppercase transition">
-              Detailed PDF Report (Link Coming Soon)
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
+                <div class="pdf-viewer-section">
+                    <div class="pdf-header">
+                        <div>
+                            <h3 style="font-size: 1.3rem;">Project Documentation & Report</h3>
+                            <p style="font-size: 0.85rem; color: var(--text-light);">Review the deck below or open the original in Drive</p>
+                        </div>
+                        <a href="${data.driveSharableLink}" target="_blank" rel="noopener noreferrer" class="drive-btn">
+                            Open in Google Drive ↗
+                        </a>
+                    </div>
+                    <div class="pdf-frame-wrapper">
+                        <iframe 
+                            src="${previewUrl}" 
+                            title="${data.title} Report"
+                            allow="autoplay"
+                            loading="lazy">
+                        </iframe>
+                    </div>
+                </div>
+            `;
 
+            modalContent.innerHTML = contentHtml;
+            projectModal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
 
-    <div id="project-alpro" class="page-view max-w-6xl mx-auto px-6 py-12">
-      <button onclick="showPage(&#39;home&#39;)" class="mb-8 text-xs font-bold uppercase tracking-wider text-stone-500 hover:text-brand-accent flex items-center gap-1">
-        ← Back to Overview
-      </button>
+        function closeProjectModal() {
+            const projectModal = document.getElementById('projectModal');
+            const modalContent = document.getElementById('modalContent');
+            if (projectModal) projectModal.classList.remove('active');
+            if (modalContent) modalContent.innerHTML = '';
+            document.body.style.overflow = 'auto';
+        }
 
-      <div class="bg-stone-900 text-white rounded-3xl p-8 md:p-12 mb-8 shadow-xl">
-        <div class="flex flex-wrap justify-between items-start gap-4 mb-6">
-          <span class="px-3 py-1 rounded-full bg-amber-500/20 text-amber-300 border border-amber-500/30 text-xs font-bold uppercase">Alpro / Danone • Product Innovation</span>
-          <span class="text-stone-400 font-mono text-sm">Case Study 03</span>
-        </div>
-        <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight mb-4">Danone × Alpro</h1>
-        <p class="text-stone-300 text-lg max-w-3xl leading-relaxed">
-          Creating and statistically validating a plant-based "Fizzy Protein Yogurt Soda Mix" tailored for Gen Z and Young Millennials.
-        </p>
-      </div>
+        function handleBackdropClick(event) {
+            if (event.target.id === 'projectModal') {
+                closeProjectModal();
+            }
+        }
 
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
-        <div class="glass-card p-5 rounded-2xl text-center">
-          <p class="text-2xl md:text-3xl font-extrabold text-stone-900">864</p>
-          <p class="text-xs text-stone-500 uppercase tracking-wider mt-1">Combinations Evaluated</p>
-        </div>
-        <div class="glass-card p-5 rounded-2xl text-center">
-          <p class="text-2xl md:text-3xl font-extrabold text-amber-600">€1.20</p>
-          <p class="text-xs text-stone-500 uppercase tracking-wider mt-1">Winning Trial Price</p>
-        </div>
-        <div class="glass-card p-5 rounded-2xl text-center">
-          <p class="text-2xl md:text-3xl font-extrabold text-stone-900">39.7M</p>
-          <p class="text-xs text-stone-500 uppercase tracking-wider mt-1">Year 1 Sachets Projected</p>
-        </div>
-        <div class="glass-card p-5 rounded-2xl text-center">
-          <p class="text-2xl md:text-3xl font-extrabold text-brand-accent">€59.55M</p>
-          <p class="text-xs text-stone-500 uppercase tracking-wider mt-1">Year 1 Revenue Scenario</p>
-        </div>
-      </div>
+        window.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') closeProjectModal();
+        });
 
-      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12">
-        <div class="lg:col-span-2 space-y-8">
-          <div class="glass-card p-8 rounded-3xl border border-stone-200/80">
-            <h3 class="text-xs font-bold uppercase tracking-widest text-brand-accent mb-2">Winning Profile &amp; Research Finding</h3>
-            <div class="bg-amber-50 p-6 rounded-2xl border border-amber-200 my-4">
-              <h4 class="font-extrabold text-xl text-stone-900 mb-2">Yuzu Lychee Instant Sachet (15g Protein / 3g Sugar)</h4>
-              <p class="text-sm text-stone-700">
-                Conjoint analysis revealed that <strong>flavour and price</strong> were stronger decision drivers than protein content alone.
-              </p>
-            </div>
-            <p class="text-sm text-stone-600">
-              Pricing Experiment Finding: <strong>"Try first. Bundle later."</strong> Single sachets at €1.20 scored a 73% purchase likelihood, whereas 3-sachet bundles at €3.50 saw a steep drop-off (Cohen's d = .890, p &lt; .001).
-            </p>
-          </div>
-        </div>
+        // Dynamic typing effect
+        const roles = ['Marketing Strategist', 'Growth Innovator', 'Consumer Insights Expert'];
+        let roleIdx = 0, charIdx = 0, isDel = false;
+        const textElem = document.getElementById('dynamic-text');
 
-        <div class="glass-card p-8 rounded-3xl border border-stone-200/80 space-y-4">
-          <h3 class="text-lg font-bold text-stone-900 border-b border-stone-200 pb-3">Product Positioning</h3>
-          <p class="text-xl font-extrabold font-display text-brand-accent">THINK PROTEIN &amp; POP!</p>
-          <p class="text-xs text-stone-600 leading-relaxed">
-            A light, refreshing, functional alternative to traditional heavy, dairy-based protein beverages.
-          </p>
-          <div class="pt-6 border-t border-stone-200">
-            <a href="file:///C:/Users/shara/Downloads/gemini-code-1788636276636.html#" class="block text-center py-3 rounded-xl bg-stone-100 hover:bg-stone-200 font-bold text-xs text-stone-800 tracking-wider uppercase transition">
-              Detailed PDF Report (Link Coming Soon)
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
+        function typeLoop() {
+            if (!textElem) return;
+            const current = roles[roleIdx];
+            if (isDel) {
+                textElem.textContent = current.substring(0, charIdx - 1);
+                charIdx--;
+            } else {
+                textElem.textContent = current.substring(0, charIdx + 1);
+                charIdx++;
+            }
 
+            let speed = isDel ? 40 : 90;
+            if (!isDel && charIdx === current.length) {
+                speed = 2200;
+                isDel = true;
+            } else if (isDel && charIdx === 0) {
+                isDel = false;
+                roleIdx = (roleIdx + 1) % roles.length;
+                speed = 400;
+            }
+            setTimeout(typeLoop, speed);
+        }
+        setTimeout(typeLoop, 800);
 
-    <div id="project-creawine" class="page-view max-w-6xl mx-auto px-6 py-12">
-      <button onclick="showPage(&#39;home&#39;)" class="mb-8 text-xs font-bold uppercase tracking-wider text-stone-500 hover:text-brand-accent flex items-center gap-1">
-        ← Back to Overview
-      </button>
+        // Scroll animation observer
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1 });
 
-      <div class="bg-stone-900 text-white rounded-3xl p-8 md:p-12 mb-8 shadow-xl">
-        <div class="flex flex-wrap justify-between items-start gap-4 mb-6">
-          <span class="px-3 py-1 rounded-full bg-purple-500/20 text-purple-300 border border-purple-500/30 text-xs font-bold uppercase">CréaWine • Market Entry Strategy</span>
-          <span class="text-stone-400 font-mono text-sm">Case Study 04</span>
-        </div>
-        <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight mb-4">CréaWine Spain</h1>
-        <p class="text-stone-300 text-lg max-w-3xl leading-relaxed">
-          Controlled validation-first market entry strategy for a phygital at-home wine creation experience.
-        </p>
-      </div>
+        document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
 
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
-        <div class="glass-card p-5 rounded-2xl text-center">
-          <p class="text-2xl md:text-3xl font-extrabold text-stone-900">158</p>
-          <p class="text-xs text-stone-500 uppercase tracking-wider mt-1">Spanish Consumers Surveyed</p>
-        </div>
-        <div class="glass-card p-5 rounded-2xl text-center">
-          <p class="text-2xl md:text-3xl font-extrabold text-purple-600">44.3%</p>
-          <p class="text-xs text-stone-500 uppercase tracking-wider mt-1">Identified Price Barrier</p>
-        </div>
-        <div class="glass-card p-5 rounded-2xl text-center">
-          <p class="text-2xl md:text-3xl font-extrabold text-stone-900">5,000+</p>
-          <p class="text-xs text-stone-500 uppercase tracking-wider mt-1">Month 24 Target Units</p>
-        </div>
-        <div class="glass-card p-5 rounded-2xl text-center">
-          <p class="text-2xl md:text-3xl font-extrabold text-brand-accent">&lt;€20</p>
-          <p class="text-xs text-stone-500 uppercase tracking-wider mt-1">Target CAC</p>
-        </div>
-      </div>
+        // FAQs Accordion
+        document.querySelectorAll('.faq-question').forEach(button => {
+            button.addEventListener('click', () => {
+                const answer = button.nextElementSibling;
+                const icon = button.querySelector('.icon');
+                
+                document.querySelectorAll('.faq-answer').forEach(ans => {
+                    if (ans !== answer) {
+                        ans.style.maxHeight = null;
+                        if (ans.previousElementSibling.querySelector('.icon')) {
+                            ans.previousElementSibling.querySelector('.icon').textContent = '+';
+                        }
+                    }
+                });
 
-      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12">
-        <div class="lg:col-span-2 space-y-8">
-          <div class="glass-card p-8 rounded-3xl border border-stone-200/80">
-            <h3 class="text-xs font-bold uppercase tracking-widest text-brand-accent mb-2">Strategic Shift</h3>
-            <div class="flex items-center gap-4 my-4">
-              <span class="text-stone-400 line-through text-lg">"Learn about wine"</span>
-              <span class="text-xl font-bold text-stone-900">→ "Create your own wine experience"</span>
-            </div>
-            <p class="text-stone-600 text-sm leading-relaxed">
-              Applying Pine &amp; Gilmore's <strong>4E Experience Economy framework</strong>: Entertainment (Creative spine), Escapism (Conversion engine), Aesthetics (Premium value justification), and Education (Reassurance layer).
-            </p>
-          </div>
-        </div>
-
-        <div class="glass-card p-8 rounded-3xl border border-stone-200/80 space-y-4">
-          <h3 class="text-lg font-bold text-stone-900 border-b border-stone-200 pb-3">Decision Gates</h3>
-          <ul class="space-y-3 text-xs text-stone-600">
-            <li><strong>Month 3:</strong> NPS +20 or higher</li>
-            <li><strong>Month 12:</strong> 1,500–2,000 units sold</li>
-            <li><strong>Month 24:</strong> 5,000+ units &amp; positive EBITDA</li>
-          </ul>
-          <div class="pt-6 border-t border-stone-200">
-            <a href="file:///C:/Users/shara/Downloads/gemini-code-1788636276636.html#" class="block text-center py-3 rounded-xl bg-stone-100 hover:bg-stone-200 font-bold text-xs text-stone-800 tracking-wider uppercase transition">
-              Detailed PDF Report (Link Coming Soon)
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-    <div id="project-lacoste" class="page-view max-w-6xl mx-auto px-6 py-12">
-      <button onclick="showPage(&#39;home&#39;)" class="mb-8 text-xs font-bold uppercase tracking-wider text-stone-500 hover:text-brand-accent flex items-center gap-1">
-        ← Back to Overview
-      </button>
-
-      <div class="bg-stone-900 text-white rounded-3xl p-8 md:p-12 mb-8 shadow-xl">
-        <div class="flex flex-wrap justify-between items-start gap-4 mb-6">
-          <span class="px-3 py-1 rounded-full bg-red-500/20 text-red-300 border border-red-500/30 text-xs font-bold uppercase">Lacoste • International Marketing</span>
-          <span class="text-stone-400 font-mono text-sm">Case Study 05</span>
-        </div>
-        <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight mb-4">Lacoste USA</h1>
-        <p class="text-stone-300 text-lg max-w-3xl leading-relaxed">
-          Repositioning French sportive elegance for American Gen Z through cross-cultural laddering research and a phygital entry model.
-        </p>
-      </div>
-
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
-        <div class="glass-card p-5 rounded-2xl text-center">
-          <p class="text-2xl md:text-3xl font-extrabold text-stone-900">9</p>
-          <p class="text-xs text-stone-500 uppercase tracking-wider mt-1">Markets Screened</p>
-        </div>
-        <div class="glass-card p-5 rounded-2xl text-center">
-          <p class="text-2xl md:text-3xl font-extrabold text-red-600">85/100</p>
-          <p class="text-xs text-stone-500 uppercase tracking-wider mt-1">USA Weighted Score</p>
-        </div>
-        <div class="glass-card p-5 rounded-2xl text-center">
-          <p class="text-2xl md:text-3xl font-extrabold text-stone-900">3</p>
-          <p class="text-xs text-stone-500 uppercase tracking-wider mt-1">Psychographic Clusters</p>
-        </div>
-        <div class="glass-card p-5 rounded-2xl text-center">
-          <p class="text-2xl md:text-3xl font-extrabold text-brand-accent">Phygital</p>
-          <p class="text-xs text-stone-500 uppercase tracking-wider mt-1">Intermediate Strategy</p>
-        </div>
-      </div>
-
-      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12">
-        <div class="lg:col-span-2 space-y-8">
-          <div class="glass-card p-8 rounded-3xl border border-stone-200/80">
-            <h3 class="text-xs font-bold uppercase tracking-widest text-brand-accent mb-2">Core Tension</h3>
-            <p class="text-stone-700 text-sm leading-relaxed mb-4">
-               qualitative EMIC laddering interviews revealed that while US Gen Z recognizes Lacoste's quality and heritage, the brand often feels <strong>classic, formal, elitist, or culturally distant</strong>.
-            </p>
-            <div class="p-4 bg-stone-50 rounded-2xl border border-stone-200">
-              <strong class="block text-stone-900 mb-1">New Desired Positioning:</strong>
-              <p class="text-lg font-bold text-brand-accent font-display">"French sportive elegance of a new generation"</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="glass-card p-8 rounded-3xl border border-stone-200/80 space-y-4">
-          <h3 class="text-lg font-bold text-stone-900 border-b border-stone-200 pb-3">3 Core Pillars</h3>
-          <ul class="space-y-2 text-xs text-stone-600">
-            <li>• <strong>Minimalistic Authenticity:</strong> Eco-friendliness &amp; timeless durability.</li>
-            <li>• <strong>Inclusive Connector:</strong> Community-led events &amp; Le Club platform.</li>
-            <li>• <strong>Creative Individualist:</strong> Limited capsules &amp; artist collaborations.</li>
-          </ul>
-          <div class="pt-6 border-t border-stone-200">
-            <a href="file:///C:/Users/shara/Downloads/gemini-code-1788636276636.html#" class="block text-center py-3 rounded-xl bg-stone-100 hover:bg-stone-200 font-bold text-xs text-stone-800 tracking-wider uppercase transition">
-              Detailed PDF Report (Link Coming Soon)
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-  </main>
-
-  <footer class="bg-stone-900 text-stone-400 py-12 border-t border-stone-800">
-    <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
-      <div>
-        <p class="text-white font-bold font-display text-lg">SHARAYU DHAKULKAR</p>
-        <p class="text-xs text-stone-500 mt-1">Marketing Strategy • Brand Performance • Product Innovation</p>
-      </div>
-      <div class="text-xs text-stone-500 text-center md:text-right">
-        <p>EDHEC Business School MSc Graduate Candidate</p>
-        <p class="mt-1">sharayusudhir.dhakulkar@edhec.com | (+33) 745512753</p>
-      </div>
-    </div>
-  </footer>
-
-  <script>
-    function showPage(pageId) {
-      const pages = document.querySelectorAll('.page-view');
-      pages.forEach(page => page.classList.remove('active'));
-      
-      const targetPage = document.getElementById(pageId);
-      if (targetPage) {
-        targetPage.classList.add('active');
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-      }
-    }
-  </script>
-
-</body></html>
+                if (answer.style.maxHeight) {
+                    answer.style.maxHeight = null;
+                    icon.textContent = '+';
+                } else {
+                    answer.style.maxHeight = answer.scrollHeight + "px";
+                    icon.textContent = '−';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
